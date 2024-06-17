@@ -1,4 +1,132 @@
-site_name: Jared Peeler | Technical Writer
+# Project information
+site_name: Test Site
 # site_url: https://mydomain.org/mysite
+
+# Repository
+repo_url: https://github.com/deceasedvector/portfolio-mkdocs
+repo_name: deceasedvector/portfolio-mkdocs
+
+# Copyright
+copyright: Copyright &copy; 2024 Jared Peeler
+
+# Configuration
 theme:
   name: material
+  custom_dir: overrides
+#  font:
+ #   text: Open Sans
+  features:
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    # - search.highlight
+    # - search.share
+    # - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  logo: assets\images\logo-01.svg
+#  favicon: images/favicon.png
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: deceasedvector
+      repo: portfolio-mkdocs
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  # - search:
+     #  separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - blog:
+      blog_toc: true
+      pagination_per_page: 5
+#  - git-revision-date-localized:
+    #  enable_creation_date: true
+#  - git-committers:
+    #  repository: deceasedvector/portfolio-mkdocs
+    #  branch: main
+
+# Additional configuration
+extra:
+#  version:
+#    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/deceasedvector
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/jaredpeeler
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
