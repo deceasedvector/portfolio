@@ -2,7 +2,7 @@
 title: Video
 ---
 
-# Integrating with FlexPay
+# Integrating with FlexPay for Payment Recovery
 
 ???+ example "Project overview"
 
