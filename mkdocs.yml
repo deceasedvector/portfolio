@@ -1,5 +1,5 @@
 # Project information
-site_name: Test Site
+site_name: Jared Peeler
 # site_url: https://mydomain.org/mysite
 
 # Repository
@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2024 Jared Peeler
 theme:
   name: material
   custom_dir: overrides
-#  font:
- #   text: Open Sans
+  font:
+    text: Roboto
   features:
     - content.action.view
     - content.code.annotate
@@ -76,6 +76,9 @@ markdown_extensions:
       permalink: true
   - pymdownx.betterem:
       smart_enable: all
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:

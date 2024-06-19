@@ -1,0 +1,20 @@
+.name-typo {
+    margin: 0;
+}
+.name-small {
+    font-size: 16px;
+    margin: 0;
+}
+.name-large {
+    font-size: 30px;
+    margin: 0;
+}
+.name-medium {
+    font-size: 20px;
+    margin: 0;
+}
+
+.sample-title {
+    font-size: 18px;
+    font-weight: bold;
+}
