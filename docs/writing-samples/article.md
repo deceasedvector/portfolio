@@ -1,13 +1,22 @@
 ---
 title: "Article"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 ---
 
-# Starting them off right: the Children’s Council of Watauga County and how you can help
+# `Article` Starting them off right: the Children’s Council of Watauga County and how you can help
 
-???+ example "Project overview"
+???+ example "Sample overview"
     
-    For my senior seminar at Appalachian State University, I was tasked with reaching out to a local charity organization to write a feature article about the awesome work they do for their community. This article was then published on the local High Country Times website.
+    __Prompt__
+    
+    For my senior seminar at Appalachian State University, I was tasked with reaching out to a local charity organization to write a feature article about the awesome work they do for their community. 
+    
+    __Methodology__
+
+    I prepared interview questions and reached out to a local charity called the Children's Council of Watauga County who help new parents manage all the headaches of parenthood. I reached out to the program and outreach coordinator, we sat down for an hour, and she answered my questions. After that I prepared a draft, which was peer reviewed by my classmates, and I sent it off to the High Country Times head editor who gave me notes. I then wrote a final draft and sent it to my inverviewee to approve.
+
+    __Result__
+    
+    The following article is the result, which is currently published on the High Country Times website. It was my first and last forray into news article writing. I had to quickly learn the basics of AP style, but all-in-all, it was a great experience!
 
 ![alt text](/assets/images/image-11.png)
 

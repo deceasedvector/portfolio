@@ -2,13 +2,13 @@
 title: API Guide
 ---
 
-# Getting started with DirectScale's API
+# `API Guide` Getting started with DirectScale's API
 
-???+ example "Project overview"
+???+ example "Sample overview"
 
-    This is an API getting started guide I wrote during my tenor at DirectScale. At that point, they didn't have any docs outside of the reference docs through Azure's API Gateway. Client developers needed some way to quickly get an overview of how to start using the API. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized. 
+    This is an API getting started guide I wrote during my tenor at DirectScale. At that point, they didn't have any docs outside of the reference docs through Azure's API Gateway. Client developers needed some way to quickly get an overview of how to start using the API. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.
 
-    The documentation was built using Readme.io in Markdown. For more developer documenation written by me, see [DirectScale Developers](https://developers.directscale.com/v1.0/docs/welcome-developers).
+    This sample provides the developers a high-level view of the API and some steps to make that initial call with Postman.
 
 ## Overview
 
@@ -46,10 +46,8 @@ You’ll see most of the calls based on a particular customer account are in the
 
 Any call that you've not performed with customer accounts themselves are in more standard groupings:
 
-<div class="api-table">
-
 Name | Route | Description
-:---|:---|:---
+---|---|---
 [Address]() | `/address/` | Basic address data.
 [Custom Services]() | `/custom/` | An authenticated means of calling your custom-written APIs.
 [Office]() | `/office/` | Web Office functions, including “Forgot Password”.
@@ -57,8 +55,6 @@ Name | Route | Description
 [Products]() | `/products/` | All things inventory-related.
 [Single Sign-On]() | `/sso/` | Although a Web Office function, this call is frequently used. Not currently OAuth. Learn more about Single Sign-On (SSO).
 [Validate]() | `/validate/` | Use this to leverage the login functionality, as well as useful form validation functions.
-
-</div>
 
 ## Authorization
 
@@ -69,12 +65,12 @@ Authorization to the Public API requires an invitation. Talk with your client co
 1. Your client contact must email [support@directscale.com](#). Partner or third-party developers must have their company request on their behalf.
 
 1. You'll need access to:
-    - [apigateway.directscale.com](#) - Live site
-    - [apigateway-stage.directscale.com](#) - Staging/testing site
+    - [apigateway.directscale.com](#) - *Live*
+    - [apigateway-stage.directscale.com](#) - *Stage*
 
     The API Gateway sites feature API Documentation, a testing tool, and a profile containing your API Keys.
 
-1. For safety and efficiency, Customer Care needs specific information:
+2. For safety and efficiency, Customer Care needs specific information:
     - The first and last name of the person receiving access.
     - The email address of the person receiving access.
     - A basic message to begin your request.
@@ -125,12 +121,14 @@ The DirectScale Platform has both *Live* and *Stage* environments. You have sepa
 
 For authentication, pass your API Key in the header of your requests as shown in the following examples:
 
-```curl
-curl --request GET \
-     --url https://dsapi.directscale.com/v1/customers/299/countries \
-     --header 'Accept: application/json' \
-     --header 'Ocp-Apim-Subscription-Key: dedfe8bc2c1448e7b2af7d1ad95a03c4'
-```
+=== "curl"
+
+    ```curl
+    curl --request GET \
+        --url https://dsapi.directscale.com/v1/customers/299/countries \
+        --header 'Accept: application/json' \
+        --header 'Ocp-Apim-Subscription-Key: dedfe8bc2c1448e7b2af7d1ad95a03c4'
+    ```
 
 ## Making your first call with Postman
 

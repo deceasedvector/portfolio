@@ -1,8 +1,22 @@
 ---
-title: Standard Operating Procedure
+title: SOP
 ---
 
-# Initiating bulk email invoices for UPS
+# `SOP` Initiating bulk email invoices for UPS
+
+???+ example "Sample overview"
+
+    __Problem__
+
+    With Waste Harmonics, my role was to write Standard Operating Procedures (SOPs) for each department because there was a common issue: employees weren't performing their duties consitently and new employees weren't being trained effectively. At the start, there weren't really any official, existing SOPs--just random rough documents of notes and vague processes. Training was handled by employees shadowing other employees until they were up to speed.
+    
+    __Solution__
+    
+    As many of the employees had enough on their plate, I decided the best approach to creating the SOPs was to write them myself using a mixture of SME interviews, gaining general product and process knowledge that applied to every department, and gathering any notes or documents that current existed. I designed a template, configure the authoring tool (Madcap Flare), and built the internal knowledge base (SharePoint) where the SOPs could be accessed (as PDFs). 
+    
+    __Result__
+    
+    As of now, I've written well over a hundred SOPs, which have been well received and are being used as the source of truth to create learning modules and other training materials. This sample here is demonstrates how my typical SOPs flow. I wrote it for the Business Intelligence team. It was a process that only the manager knew how to do and with this SOP, he can delegate the task to any one else on the team.
 
 __Standard Operating Procedure__
 
@@ -28,10 +42,16 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
 
 ## Procedure
 
-### 1. Update saved search
+### 1. Update the saved search
 
 1. In the NetSuite **Global Search Bar**, enter "*sea: ups email send*" and select **Edit** on the suggestion.
+
+    ![alt text](../assets/images/saved-seach-edit.png){ width=500 } 
+
 2. Under **Criteria**, update the **Date** filter to the requested date range.
+   
+    ![alt text](../assets/images/set-description.png){ width=500 } 
+
 3. Optionally, update any other fields.
 4. Select **Save**.
 
@@ -42,6 +62,8 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
 3. In the **Workflow** sidebar, select **Edit**. 
 
     The Workflow window opens.
+
+    ![alt text](../assets/images/workflow-window.png){ width=500 }  
 
 4. Under **Schedule**:
 
@@ -55,13 +77,22 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
 ### 3. Update the workflow state
 
 1. Under **Workspace**, select the **State 1** box.
+
+    ![alt text](../assets/images/workflow-state-box.png){ width=400 }  
+
 2. In the **State** sidebar, select **Edit**.
 
     The Workflow State window opens.
 
+    ![alt text](../assets/images/workflow-state-window.png){ width=500 }  
+
 3. Under **Actions**, select **Send Email**.
 
+    ![alt text](../assets/images/send-email-link.png){ width=400 }  
+
     The Workflow Action window opens.
+
+    ![alt text](../assets/images/workflow-action-window.png){ width=500 }  
 
 4. Under **Schedule**, for **START TIME**, match the time you selected for **EXECUTION TIME** on the workflow.
 5. Under **Sender**:
@@ -85,7 +116,7 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
     1. Select the **INCLUDE TRANSACTION** checkbox.
     2. For **TYPE**, choose *PDF*.
 
-9. Select **Save** on the workflow action.
+9.  Select **Save** on the workflow action.
 10. Select **Save** on the workflow state.
 11. Wait for the workflow to run.
 

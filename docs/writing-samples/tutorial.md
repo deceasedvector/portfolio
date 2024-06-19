@@ -1,11 +1,14 @@
 ---
-title: Developer code example
+title: Code example
 ---
 
-# Placing an Associate in a Tree 
+# `Code example` Placing an Associate in a Tree 
 
-???+ example "Project overview"
-    This project is a simple code example for developers to use as a starting point. The point of it is to provide some context to the starter code--which in its original form linked out to the applicable APIs. This particular example is for a very specific audience of developers integrating with DirectScale's Client Extension to extend the default Commission Plan template with .NET. 
+???+ example "Sample overview"
+
+    While building out DirectScale's Developer documenation site, I needed tangible examples of real code that a developer could start from. Looking through the examples our SDET developer prepared, I came across this one.
+
+    With the code ready and tested, my goal was to break down the important elements and, in its original form, link out to the applicable API Reference docs. This particular example is for a very specific audience of developers integrating with DirectScale's Client Extension to extend the default Commission Plan template with .NET. 
 
 ## Introduction
 

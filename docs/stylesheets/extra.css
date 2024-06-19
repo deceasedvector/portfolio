@@ -18,3 +18,25 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 2.2rem;
+}
+
+.dot {
+    height: 130px;
+    width: 130px;
+    background-color: #ccc;
+    background-image: url(../assets/images/my-face.jpg);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .md-nav__title {
+    text-align: center;
+  }
