@@ -16,4 +16,4 @@ I've created knowledges bases using **Zendesk**, **Readme**, **Confluence**, and
 
 Take a look around at my writing samples and résumé. If you like what you see, let's chat!
 
-[:fontawesome-solid-paper-plane: Let's connect!](mailto:jaredpeeler@gmail.com){ .md-button .md-button--primary } [:material-timeline-text: Resume](/resume/){ .md-button } [:material-file-document-check: Writing samples](writing-samples/tutorial/){ .md-button }
+[:fontawesome-solid-paper-plane: Let's connect!](mailto:jaredpeeler@gmail.com){ .md-button .md-button--primary } [:material-timeline-text: Résumé](/resume/){ .md-button } [:material-file-document-check: Writing samples](writing-samples/tutorial/){ .md-button }
