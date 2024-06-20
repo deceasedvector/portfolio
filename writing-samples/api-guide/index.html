@@ -1,0 +1,1371 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../blog/archive/2023/">
+      
+      
+        <link rel="next" href="../article/">
+      
+      
+      <link rel="icon" href="../../assets/images/logo-01.svg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>API Guide - Jared Peeler</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-guide-getting-started-with-directscales-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Jared Peeler" class="md-header__button md-logo" aria-label="Jared Peeler" data-md-component="logo">
+      
+  <img src="../../assets/images/logo-01.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jared Peeler
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/deceasedvector/portfolio-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    deceasedvector/portfolio-mkdocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+
+ <!-- Main navigation -->
+ 
+   
+   <div
+     class="md-sidebar md-sidebar--primary"
+     data-md-component="sidebar"
+     data-md-type="navigation"
+     
+   >
+   <div class="dot"></div>
+     <div class="md-sidebar__scrollwrap">
+        
+       <div class="md-sidebar__inner">
+         
+  
+  
+  
+  <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+    <label class="md-nav__title" for="__drawer">
+      <a href="../.." title="Jared Peeler" class="md-nav__button md-logo" aria-label="Jared Peeler" data-md-component="logo">
+        
+  <img src="../../assets/images/logo-01.svg" alt="logo">
+
+      </a>
+      <!--Jared Peeler-->
+       Jared Peeler | Technical Writer
+    </label>
+    
+      <div class="md-nav__source">
+        <a href="https://github.com/deceasedvector/portfolio-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    deceasedvector/portfolio-mkdocs
+  </div>
+</a>
+      </div>
+    
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        
+        
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About me
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+      
+        
+        
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resume/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Résumé
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+      
+        
+        
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/holidays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Holidays
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+      
+        
+        
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Writing samples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Writing samples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    API Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verbs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signing-up-for-an-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing up for an account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-to-the-directscale-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access to the DirectScale Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keeping-track-of-api-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keeping track of API users
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-your-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting your API Keys
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting your API Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locating-your-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locating Your API Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-your-first-call-with-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making your first call with Postman
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Making your first call with Postman">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../article/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Article
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+      
+    </ul>
+  </nav>
+       </div>
+     </div>
+   </div>
+ 
+
+ <!-- Table of contents -->
+ 
+   
+   <div
+     class="md-sidebar md-sidebar--secondary"
+     data-md-component="sidebar"
+     data-md-type="toc"
+     
+   >
+     <div class="md-sidebar__scrollwrap">
+       <div class="md-sidebar__inner">
+         
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verbs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signing-up-for-an-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing up for an account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-to-the-directscale-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access to the DirectScale Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keeping-track-of-api-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keeping track of API users
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-your-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting your API Keys
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting your API Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locating-your-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Locating Your API Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-your-first-call-with-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making your first call with Postman
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Making your first call with Postman">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+       </div>
+     </div>
+   </div>
+ 
+
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/deceasedvector/portfolio-mkdocs/raw/master/docs/writing-samples/api-guide.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="api-guide-getting-started-with-directscales-api"><code>API Guide</code> Getting started with DirectScale's API<a class="headerlink" href="#api-guide-getting-started-with-directscales-api" title="Permanent link">&para;</a></h1>
+<details class="example" open="open">
+<summary>Meta</summary>
+<p>DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed some way to quickly get an overview of how to start using the API. With that in mind, I wanted to create a simple overview of the API and provide developers to means to get started with the API as quickly as possible. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.</p>
+<p>This sample provides the developers a high-level view of the API and some steps to make that initial call with Postman.</p>
+</details>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The Public API is a RESTful service that accepts JSON requests. With it, you can create intuitive integrations and additional functionality not present in the standard DirectScale Platform. Need to integrate with a logistics provider or eCommerce platform, create a custom enrollment experience, or import inventory? You can accomplish all of these and more with the Public API. </p>
+<h3 id="environments">Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h3>
+<p>The DirectScale Platform has both <em>Live</em> and <em>Stage</em> environments. The Public API has separate keys for these environments.</p>
+<ul>
+<li><em>Live</em> site base API URL - <code>https://dsapi.directscale.com/v1</code>.</li>
+<li><em>Stage</em> site base API URL - <code>https://dsapi-stage.directscale.com/v1</code>.</li>
+</ul>
+<h3 id="verbs">Verbs<a class="headerlink" href="#verbs" title="Permanent link">&para;</a></h3>
+<p>The endpoints are set up in a customer-centric way with sensibly use of the HTTP verbs.</p>
+<ul>
+<li><code>GET</code> - To retrieve</li>
+<li><code>POST</code> - To create</li>
+<li><code>DELETE</code> - To delete</li>
+<li><code>PUT</code> - To update</li>
+<li><code>PATCH</code> - To update by named parameter</li>
+</ul>
+<h3 id="call-structure">Call structure<a class="headerlink" href="#call-structure" title="Permanent link">&para;</a></h3>
+<p>We've kept the call structure simple. Take the <code>Customers</code> API for example. It has a call structured with the Customer ID in the URL:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://dsapi.directscale.com/v1/customers/{customerId}/
+</span></code></pre></div>
+<p>You’ll see most of the calls based on a particular customer account are in the <code>Customers</code> API. You can manage customer-related orders, AutoShips, payment methods, services, stats, service log entries, and reset passwords in this same way with this URL structure:</p>
+<p><code>https://dsapi.directscale.com/v1/customers/{customerId}/orders</code> or <code>autoships</code> or <code>paymentmethods</code>, and so on.</p>
+<p>Any call that you've not performed with customer accounts themselves are in more standard groupings:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Route</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Address</a></td>
+<td><code>/address/</code></td>
+<td>Basic address data.</td>
+</tr>
+<tr>
+<td><a href="">Custom Services</a></td>
+<td><code>/custom/</code></td>
+<td>An authenticated means of calling your custom-written APIs.</td>
+</tr>
+<tr>
+<td><a href="">Office</a></td>
+<td><code>/office/</code></td>
+<td>Web Office functions, including “Forgot Password”.</td>
+</tr>
+<tr>
+<td><a href="">Orders</a></td>
+<td><code>/orders/</code></td>
+<td>When a call operates on an order ID or related entities (like AutoShips), you’ll find it here, with the same HTTP verbs as in Customers where it makes sense.</td>
+</tr>
+<tr>
+<td><a href="">Products</a></td>
+<td><code>/products/</code></td>
+<td>All things inventory-related.</td>
+</tr>
+<tr>
+<td><a href="">Single Sign-On</a></td>
+<td><code>/sso/</code></td>
+<td>Although a Web Office function, this call is frequently used. Not currently OAuth. Learn more about Single Sign-On (SSO).</td>
+</tr>
+<tr>
+<td><a href="">Validate</a></td>
+<td><code>/validate/</code></td>
+<td>Use this to leverage the login functionality, as well as useful form validation functions.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="authorization">Authorization<a class="headerlink" href="#authorization" title="Permanent link">&para;</a></h2>
+<p>Authorization to the Public API requires an invitation. Talk with your client contact (or security admin) to work with Customer Care to create an API account for you. </p>
+<h3 id="signing-up-for-an-account">Signing up for an account<a class="headerlink" href="#signing-up-for-an-account" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Your client contact must email <a href="#">support@directscale.com</a>. Partner or third-party developers must have their company request on their behalf.</p>
+</li>
+<li>
+<p>You'll need access to:</p>
+<ul>
+<li><a href="#">apigateway.directscale.com</a> - <em>Live</em></li>
+<li><a href="#">apigateway-stage.directscale.com</a> - <em>Stage</em></li>
+</ul>
+<p>The API Gateway sites feature API Documentation, a testing tool, and a profile containing your API Keys.</p>
+</li>
+<li>
+<p>For safety and efficiency, Customer Care needs specific information:</p>
+<ul>
+<li>The first and last name of the person receiving access.</li>
+<li>The email address of the person receiving access.</li>
+<li>A basic message to begin your request.</li>
+<li>Your company’s client ID.</li>
+<li>Which environment to give access to <em>Live</em>, <em>Stage</em>, or <em>both</em>.</li>
+<li>
+<p>Partners or third-party developers must provide proof that the company authorizes access. It's best to do this through email. </p>
+<p>Screenshots of company approval will do but must show it came from the company. <em>This is to maintain security compliance</em>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="access-to-the-directscale-platform">Access to the DirectScale Platform<a class="headerlink" href="#access-to-the-directscale-platform" title="Permanent link">&para;</a></h3>
+<p>If you’re a 3<sup>rd</sup> party developer, speak with your client contact to create an admin account for you on the DirectScale Corporate Admin. It has <em>Stage</em> and <em>Live</em> environments. You can access it at: </p>
+<ul>
+<li><code>{client_ID].corpadmin.directscale.com</code> for <em>Live</em></li>
+<li><code>{client_ID].corpadmin.directscalestage.com</code> for <em>Stage</em>.</li>
+</ul>
+<p>Knowing how DirectScale works is essential to understanding what the API is doing and how to validate what you post.</p>
+<h3 id="keeping-track-of-api-users">Keeping track of API users<a class="headerlink" href="#keeping-track-of-api-users" title="Permanent link">&para;</a></h3>
+<p>Your Corporate Admin keeps track of your authorized Public API users. </p>
+<p><img alt="alt text" src="/assets/images/image.png" /></p>
+<p>To view, navigate to <strong>Administration</strong> &gt; <strong>Public Api Users</strong>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{client_ID}.corpadmin.directscale.com/Corporate/Admin/AzureResourceManagement/PublicApiUsers
+</span></code></pre></div>
+<h2 id="getting-your-api-keys">Getting your API Keys<a class="headerlink" href="#getting-your-api-keys" title="Permanent link">&para;</a></h2>
+<p>Azure controls authentication for the Public APIs. DirectScale assigns you to particular clients. After you're added and authorized to your client product, your <code>Ocp-Apim-Subscription-Key</code> API Key will be available in your API Gateway Profile. </p>
+<h3 id="locating-your-api-keys">Locating Your API Keys<a class="headerlink" href="#locating-your-api-keys" title="Permanent link">&para;</a></h3>
+<p>To locate your <strong>Ocp-Apim-Subscription-Key</strong> API Key:</p>
+<ol>
+<li>Go to <a href="#">apigateway.directscale.com/developer</a>.</li>
+<li>Select your name at the top, right corner and choose <em>PROFILE</em>.</li>
+<li>
+<p>On your Profile page, under <strong>Your subscriptions</strong>, you'll find your API Subscription Keys.</p>
+<p><img alt="alt text" src="/assets/images/image-1.png" /></p>
+</li>
+</ol>
+<p>The DirectScale Platform has both <em>Live</em> and <em>Stage</em> environments. You have separate keys for these environments. The API Key links your calls to your specific back-end client. For those who service multiple back-end clients, you’ll have multiple unique keys. </p>
+<h3 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h3>
+<p>For authentication, pass your API Key in the header of your requests as shown in the following examples:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">curl</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl --request GET \
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    --url https://dsapi.directscale.com/v1/customers/299/countries \
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    --header &#39;Accept: application/json&#39; \
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    --header &#39;Ocp-Apim-Subscription-Key: dedfe8bc2c1448e7b2af7d1ad95a03c4&#39;
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="making-your-first-call-with-postman">Making your first call with Postman<a class="headerlink" href="#making-your-first-call-with-postman" title="Permanent link">&para;</a></h2>
+<p>Postman is a popular API testing tool. We recommend trying out several DirectScale Public API endpoints to get of feel for them before using them in your source code. With this guide, you'll learn how to create a basic call with Postman.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Locate your API Key. You can find your <strong>Ocp-Apim-Subscription-Key</strong> in your Profile or the <strong>Try It</strong> section of the API Documentation Site.</p>
+<p><img alt="alt text" src="/assets/images/image-8.png" /></p>
+</li>
+<li>
+<p>In the API Docs, note the verb (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, and <code>DELETE</code>) used.</p>
+</li>
+<li>
+<p>Find the <strong>Request URL</strong> of the call you’d like to make.</p>
+<p><img alt="alt text" src="/assets/images/image-9.png" /></p>
+</li>
+<li>
+<p>Note the endpoint's <strong>Request Parameters</strong> (for example, <code>{customerId}</code>). You’ll be inserting the parameter values in the URL as part of the call.</p>
+<p><img alt="alt text" src="/assets/images/image-10.png" /></p>
+</li>
+</ol>
+<h3 id="creating-a-request">Creating a request<a class="headerlink" href="#creating-a-request" title="Permanent link">&para;</a></h3>
+<p>Open <a href="https://web.postman.co/">Postman</a> and <a href="https://learning.postman.com/docs/sending-requests/requests/">create a new request</a>.</p>
+<ol>
+<li>
+<p>Paste the <strong>Request URL</strong> and enter any <strong>Request Parameters</strong> in the URL.</p>
+<p><img alt="alt text" src="/assets/images/image-7.png" /></p>
+</li>
+<li>
+<p>Choose the proper verb from the dropdown.</p>
+<p><img alt="alt text" src="/assets/images/image-6.png" /></p>
+</li>
+<li>
+<p>Under <strong>Headers</strong>:</p>
+<p><img alt="alt text" src="/assets/images/image-5.png" /></p>
+<ol>
+<li>In <strong>KEY</strong>, enter "<em>ocp-apim-subscription-key</em>"</li>
+<li>In <strong>VALUE</strong>, enter your secret API Key.</li>
+</ol>
+</li>
+<li>
+<p>Leave all other settings to the default.</p>
+</li>
+<li>
+<p>If doing a non-<code>GET</code> call, add a JSON request body.</p>
+<p><img alt="alt text" src="/assets/images/image-4.png" /></p>
+<ol>
+<li>In the API Docs, copy the endpoint's request body.</li>
+<li>In Postman, click the <strong>Body</strong> tab.</li>
+<li>Select the dropdown and choose <em>raw</em>.</li>
+<li>From <strong>Language</strong>, choose <em>JSON</em>.</li>
+<li>Paste the request body.</li>
+</ol>
+</li>
+<li>
+<p>Select <strong>Send</strong>. </p>
+<p><img alt="alt text" src="/assets/images/image-3.png" /></p>
+<p>If successful, the response body will appear.</p>
+<p><img alt="alt text" src="/assets/images/image-2.png" /></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../blog/archive/2023/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2023">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                2023
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../article/" class="md-footer__link md-footer__link--next" aria-label="Next: Article">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Article
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Jared Peeler
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/deceasedvector" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/jaredpeeler" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
