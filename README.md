@@ -11,5 +11,5 @@ I've created knowledges bases using **Zendesk**, **Readme**, **Confluence**, and
 Visit my portfolio to see my writing samples and résumé. If you like what you see, let's chat!
 
 - [Let's connect!](mailto:jaredpeeler@gmail.com) 
-- [Résumé](https://www.deceasedvector.github.io/portfolio/resume/)
+- [Résumé](https://deceasedvector.github.io/portfolio/resume/)
 - [Writing samples](https://deceasedvector.github.io/portfolio/writing-samples/api-guide/)
