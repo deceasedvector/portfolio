@@ -12,7 +12,7 @@ title: "Article"
     
     The following article is the result, which is currently published on the High Country Times website. It was my first and last forray into news article writing. I had to quickly learn the basics of AP style, but all-in-all, it was a great experience!
 
-![alt text](/assets/images/image-11.png)
+![alt text](../assets/images/image-11.png)
 
 In a small office nestled across from the Watauga Medical Center, the Children’s Council of Watauga County sits unassumingly. Inside the office is a cozy reading area filled with children’s and parenting books, as well as people working tirelessly to make a bigger impact in the community than the modest office might let on.
 
@@ -22,7 +22,7 @@ Celebrating its 40th anniversary this year, the Children’s Council has been he
 
 “Children are our future.” That may be a cheesy sentiment from a Whitney Houston song, but it is true nonetheless, and the Children’s Council was founded with a fervent devotion to giving children the future they deserve. Focusing specifically on Watauga County, its cornerstones are early childhood development and family support. Its family support wing offers families in need resources that make raising a child a little easier.
 
-![alt text](/assets/images/image-12.png)
+![alt text](../assets/images/image-12.png)
 
 “It’s hard becoming a parent — trying to figure out how to handle a new baby and all the issues that entail. It’s exciting. It’s a wonderful time, but it’s challenging trying to figure out,” Scott said.
 
@@ -40,7 +40,7 @@ One of the oldest nonprofits in the area, the Children’s Council was started i
 
 One of the areas of expansion comes in the form of [“Nurtured Beginnings,”](http://www.thechildrenscouncil.org/nurtured-beginnings.html) a new program started this year that specifically helps families with newborns up to 12 weeks old. It enables a postpartum specialist to visit the family up to three times in their home for free and bring a meal from [Green Street Catering](http://www.greenstreetcatering.org/) or [F.A.R.M. Cafe](http://farmcafe.org/), as well as a hand-knitted hat for the baby. They also speak with the new parents about the child’s development and screen the parents to identify and help avoid any kind of postnatal anxiety or depression.
 
-![alt text](/assets/images/image-13.png)
+![alt text](../assets/images/image-13.png)
 
 The Children’s Council also does a lot for local teachers, especially teachers involved with early education who need certain training to operate and teach in a childcare center.
 
@@ -56,7 +56,7 @@ So, if you want to help, what kind of services can you volunteer? For one: the k
 
 The Children’s Council also leads community-wide diaper drives. In the past, Appalachian State University student groups, as well as local churches, have participated. In 2014, Boone local Sam Walker used the crowdfunding website [GoFundMe to raise over $500 to buy diapers](https://www.gofundme.com/7v3n0s). All the diapers for the diaper bank come from volunteers pulling them together and donating them. Last year, more than 60,000 diapers were given out to families in need.
 
-![alt text](/assets/images/image-14.png)
+![alt text](../assets/images/image-14.png)
 
 The Children’s Council serves its community, but it also needs a lot of support from the community. This mutually beneficial relationship is made evident every year with the organization’s annual Party with a Purpose event.
 
@@ -74,7 +74,7 @@ Another program of note is [the Dolly Parton Imagination Library](https://imagin
 
 “This time in a child’s life is so important in terms of brain development and forming connections,” Scott said. “We want to help parents to know how to interact with their children and to understand what they are going through developmentally. It is so important that children have a good, healthy home life and that preschool is a good quality experience.”
 
-![alt text](/assets/images/image-15.png)
+![alt text](../assets/images/image-15.png)
 
 For more information about the Children’s Council of Watauga County, visit its [website](http://www.thechildrenscouncil.org/).
 

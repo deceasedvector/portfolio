@@ -6,7 +6,7 @@ title: API Guide
 
 ???+ example "Meta"
 
-    DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed some way to quickly get an overview of how to start using the API. With that in mind, I wanted to create a simple overview of the API and provide developers to means to get started with the API as quickly as possible. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.
+    DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed on how to start using the API. With that in mind, I wanted to create a simple overview of the API and provide developers to means to get started with the API as quickly as possible. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.
 
     This sample provides the developers a high-level view of the API and some steps to make that initial call with Postman.
 
@@ -93,7 +93,7 @@ Knowing how DirectScale works is essential to understanding what the API is doin
 
 Your Corporate Admin keeps track of your authorized Public API users. 
 
-![alt text](/assets/images/image.png)
+![alt text](../assets/images/image.png)
 
 To view, navigate to **Administration** > **Public Api Users**.
 
@@ -113,7 +113,7 @@ To locate your **Ocp-Apim-Subscription-Key** API Key:
 2. Select your name at the top, right corner and choose *PROFILE*.
 3. On your Profile page, under **Your subscriptions**, you'll find your API Subscription Keys.
 
-    ![alt text](/assets/images/image-1.png)
+    ![alt text](../assets/images/image-1.png)
 
 The DirectScale Platform has both *Live* and *Stage* environments. You have separate keys for these environments. The API Key links your calls to your specific back-end client. For those who service multiple back-end clients, you’ll have multiple unique keys. 
 
@@ -138,17 +138,17 @@ Postman is a popular API testing tool. We recommend trying out several DirectSca
 
 1. Locate your API Key. You can find your **Ocp-Apim-Subscription-Key** in your Profile or the **Try It** section of the API Documentation Site.
 
-    ![alt text](/assets/images/image-8.png)
+    ![alt text](../assets/images/image-8.png)
 
 1. In the API Docs, note the verb (`GET`, `POST`, `PUT`, `PATCH`, and `DELETE`) used.
 
 1. Find the **Request URL** of the call you’d like to make.
 
-    ![alt text](/assets/images/image-9.png)
+    ![alt text](../assets/images/image-9.png)
 
 1. Note the endpoint's **Request Parameters** (for example, `{customerId}`). You’ll be inserting the parameter values in the URL as part of the call.
 
-    ![alt text](/assets/images/image-10.png)
+    ![alt text](../assets/images/image-10.png)
 
 ### Creating a request
 
@@ -156,15 +156,15 @@ Open [Postman](https://web.postman.co/) and [create a new request](https://learn
 
 1. Paste the **Request URL** and enter any **Request Parameters** in the URL.
 
-    ![alt text](/assets/images/image-7.png)
+    ![alt text](../assets/images/image-7.png)
 
 1. Choose the proper verb from the dropdown.
 
-    ![alt text](/assets/images/image-6.png)
+    ![alt text](../assets/images/image-6.png)
 
 1. Under **Headers**:
 
-    ![alt text](/assets/images/image-5.png)
+    ![alt text](../assets/images/image-5.png)
 
     1. In **KEY**, enter "*ocp-apim-subscription-key*"
     1. In **VALUE**, enter your secret API Key.
@@ -173,7 +173,7 @@ Open [Postman](https://web.postman.co/) and [create a new request](https://learn
 
 1. If doing a non-`GET` call, add a JSON request body.
 
-    ![alt text](/assets/images/image-4.png)
+    ![alt text](../assets/images/image-4.png)
 
     1. In the API Docs, copy the endpoint's request body.
     1. In Postman, click the **Body** tab.
@@ -183,8 +183,8 @@ Open [Postman](https://web.postman.co/) and [create a new request](https://learn
 
 1. Select **Send**. 
 
-    ![alt text](/assets/images/image-3.png)
+    ![alt text](../assets/images/image-3.png)
 
     If successful, the response body will appear.
 
-    ![alt text](/assets/images/image-2.png)
+    ![alt text](../assets/images/image-2.png)
