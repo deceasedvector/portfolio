@@ -4,7 +4,7 @@ title: Code example
 
 # `Code example` Placing an Associate in a Tree 
 
-???+ example "Sample overview"
+???+ example "Meta"
 
     While building out DirectScale's Developer documenation site, I needed tangible examples of real code that a developer could start from. Looking through the examples our SDET developer prepared, I came across this one.
 

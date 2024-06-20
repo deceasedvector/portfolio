@@ -4,9 +4,9 @@ title: API Guide
 
 # `API Guide` Getting started with DirectScale's API
 
-???+ example "Sample overview"
+???+ example "Meta"
 
-    This is an API getting started guide I wrote during my tenor at DirectScale. At that point, they didn't have any docs outside of the reference docs through Azure's API Gateway. Client developers needed some way to quickly get an overview of how to start using the API. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.
+    DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed some way to quickly get an overview of how to start using the API. With that in mind, I wanted to create a simple overview of the API and provide developers to means to get started with the API as quickly as possible. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.
 
     This sample provides the developers a high-level view of the API and some steps to make that initial call with Postman.
 
