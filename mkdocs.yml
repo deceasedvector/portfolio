@@ -121,6 +121,9 @@ plugins:
     #  repository: deceasedvector/portfolio-mkdocs
     #  branch: main
 
+not_in_nav: |
+  /blog/**/*.md
+
 # Additional configuration
 extra:
 #  version:

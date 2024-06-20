@@ -10,13 +10,19 @@ title: SOP
     
     As many of the employees had enough on their plate, I decided the best approach to creating the SOPs was to write them myself using a mixture of SME interviews, gaining general product and process knowledge that applied to every department, and gathering any notes or documents that current existed. I designed a template, configure the authoring tool (MadCap Flare), and built the internal knowledge base (SharePoint) where the SOPs could be accessed (as PDFs). 
     
-    As of now, I've written well over a hundred SOPs, which have been well received and are being used as the source of truth to create learning modules and other training materials. This sample here is demonstrates how my typical SOPs flow. I wrote it for the Business Intelligence team. It was a process that only the manager knew how to do and with this SOP, he can delegate the task to any one else on the team.
+    As of now, I've written well over a hundred SOPs, which have been well received and are being used as the source of truth to create learning modules and other training materials. 
+    
+    This sample here is demonstrates how my typical SOPs flow. I wrote it for the Business Intelligence team. It was a process that only the manager knew how to do and with this SOP, he can delegate the task to any one else on the team. 
+    
+    The final result was a PDF with a document layout and design of my own creation.
+
+    [:fontawesome-solid-file-pdf: View orginal PDF](../assets/pdfs/Emailing%20Invoices%20in%20Bulk%20for%20UPS.pdf){ .md-button }
 
 __Standard Operating Procedure__
 
 Department | Version | Publish date
 ---|---|---
-Business Intelligence | 1.0 | 5/3/2024
+Business Intelligence | 1.0 | 6/20/2024
 
 ## Purpose
 
@@ -30,9 +36,7 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
 
 === "Resources"
 
-    - [Billing Customers](#)
-    - [Saved Searches](#)
-    - [Workflows](#)
+    *N/A*
 
 ## Procedure
 
@@ -53,7 +57,7 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
 
 1. Go to **Customization** > **Workflow** > **Workflows**.
 2. Find the *UPS Invoice Send* workflow and select **Edit**.
-3. In the **Workflow** sidebar, select **Edit**. 
+3. In the **Workflow** sidebar, select **Edit** (![Edit](../assets/images/edit-icon-pencil.png)). 
 
     The Workflow window opens.
 
@@ -74,7 +78,7 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
 
     ![alt text](../assets/images/workflow-state-box.png){ width=400 }  
 
-2. In the **State** sidebar, select **Edit**.
+2. In the **State** sidebar, select **Edit** (![Edit](../assets/images/edit-icon-pencil.png)). 
 
     The Workflow State window opens.
 
@@ -101,7 +105,7 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
     2. In **SUBJECT**, enter the subject template.
 
         ???+ note
-            Some customers have specific formats the SUBJECT must adhere to.
+            Some customers have specific formats the **SUBJECT** must adhere to.
     
     3. In **BODY**, enter any applicable information.
 
