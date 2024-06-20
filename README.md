@@ -1,4 +1,4 @@
-# :wave_tone1: Hi there!
+# Hi there!
 
 ## I'm Jared Peeler, Technical Writer
 
