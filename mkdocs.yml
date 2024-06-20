@@ -91,22 +91,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# Plugins
-plugins:
-  # - search:
-     #  separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - blog:
-      blog_toc: true
-      pagination_per_page: 5
-#  - git-revision-date-localized:
-    #  enable_creation_date: true
-#  - git-committers:
-    #  repository: deceasedvector/portfolio-mkdocs
-    #  branch: main
-
-not_in_nav: |
-  /blog/**/*.md
-
 # Additional configuration
 extra:
 #  version:
