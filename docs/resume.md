@@ -4,7 +4,7 @@ title: Résumé
 
 # Résumé
 
-[:fontawesome-regular-file-pdf: Download Résumé](/docs/assets/pdfs/JaredPeeler_Resume_2024.pdf){ .md-button }
+[:fontawesome-regular-file-pdf: Download Résumé](assets/pdfs/JaredPeeler_Resume_2024.pdf){ .md-button }
 
 ## Skills
 
