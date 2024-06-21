@@ -129,7 +129,7 @@ title: Résumé
 
 <div class="sessions" markdown>
 
-- **Bachelor's of English**, *Appalachian State University*
+- **Bachelor's of Art in English**, *Appalachian State University*
 
     Concentration in Professional Writing, Minor in Art
 
