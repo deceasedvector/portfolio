@@ -1,10 +1,10 @@
 # Project information
 site_name: Jared Peeler
-# site_url: https://mydomain.org/mysite
+site_url: https://deceasedvector.github.io/portfolio
 
 # Repository
-repo_url: https://github.com/deceasedvector/portfolio-mkdocs
-repo_name: deceasedvector/portfolio-mkdocs
+repo_url: https://github.com/deceasedvector/portfolio
+repo_name: deceasedvector/portfolio
 
 # Copyright
 copyright: Copyright &copy; 2024 Jared Peeler
@@ -19,12 +19,12 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.code.select
+    - content.code.select
     # - content.footnote.tooltips
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
@@ -37,10 +37,10 @@ theme:
     - navigation.top
     - navigation.tracking
     # - search.highlight
-    # - search.share
-    # - search.suggest
     - toc.follow
     # - toc.integrate
+    - search.suggest
+    - search.share
   palette:
       primary: custom
       accent: custom
@@ -78,7 +78,7 @@ markdown_extensions:
       normalize_issue_symbols: true
       repo_url_shorthand: true
       user: deceasedvector
-      repo: portfolio-mkdocs
+      repo: portfolio
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
@@ -90,6 +90,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
 # Additional configuration
 extra:
