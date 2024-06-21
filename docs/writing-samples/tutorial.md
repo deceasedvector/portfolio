@@ -6,7 +6,7 @@ title: Code example
 
 ???+ example "Meta"
 
-    While building out DirectScale's Developer documenation site, I needed tangible examples of real code that a developer could start from. Looking through the examples our SDET developer prepared, I came across this one.
+    While building out DirectScale's Developer documentation site, I needed tangible examples of real code that a developer could start from. Looking through the examples our SDET developer prepared, I came across this one.
 
     With the code ready and tested, my goal was to break down the important elements and, in its original form, link out to the applicable API Reference docs. This particular example is for a very specific audience of developers integrating with DirectScale's Client Extension to extend the default Commission Plan template with .NET. 
 

@@ -6,7 +6,7 @@ title: API Guide
 
 ???+ example "Meta"
 
-    DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed on how to start using the API. With that in mind, I wanted to create a simple overview of the API and provide developers to means to get started with the API as quickly as possible. The full plan was to build out a more user-friendly API doc and test site, but alas I was unable to see the project fully realized.
+    DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed to know how to start using the API. With that in mind, I wanted to create a simple overview of the API and provide developers the means to get started as quickly as possible. The full plan was to build out a more user-friendly API docs and test site, but alas, I was unable to see the project fully realized.
 
     This sample provides the developers a high-level view of the API and some steps to make that initial call with Postman.
 

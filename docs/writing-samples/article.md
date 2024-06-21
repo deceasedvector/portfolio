@@ -6,11 +6,11 @@ title: "Article"
 
 ???+ example "Meta"
     
-    For my senior seminar at Appalachian State University, I was tasked with reaching out to a local charity organization to write a feature article about the awesome work they do for their community. 
+    For my senior seminar at Appalachian State University, I was tasked with writing a featured article on a local charity organization about the awesome work they did for their community. 
 
-    I prepared interview questions and reached out to a local charity called the Children's Council of Watauga County who help new parents manage all the headaches of parenthood. I reached out to the program and outreach coordinator, we sat down for an hour, and she answered my questions. After that I prepared a draft, which was peer reviewed by my classmates, and I sent it off to the High Country Times head editor who gave me notes. I then wrote a final draft and sent it to my inverviewee to approve.
+    I prepared interview questions and contacted an organization called the Children's Council of Watauga County, who help new parents manage all the headaches of parenthood. I reached out to the program and outreach coordinator, we sat down for an hour, and she answered my questions. After that I prepared a draft, which was peer reviewed by my classmates, and I sent it off to the High Country Press' head editor who gave me notes. I then wrote a final draft and sent it to my interviewee to approve.
     
-    The following article is the result, which is currently published on the High Country Times website. It was my first and last forray into news article writing. I had to quickly learn the basics of AP style, but all-in-all, it was a great experience!
+    The following article is the result, which is currently published on the High Country Press website. It was my first and last foray into news article writing. I had to quickly learn the basics of AP style, but all-in-all, it was a great experience!
 
 ![alt text](../assets/images/image-11.png)
 

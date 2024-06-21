@@ -6,17 +6,17 @@ title: SOP
 
 ???+ example "Meta"
 
-    With Waste Harmonics, my role was to write Standard Operating Procedures (SOPs) for each department because there was a common issue: employees weren't performing their duties consitently and new employees weren't being trained effectively. At the start, there weren't really any official, existing SOPs--just random rough documents of notes and vague processes. Training was handled by employees shadowing other employees until they were up to speed.
+    With Waste Harmonics, my role was to write Standard Operating Procedures (SOPs) for each department because there was a common issue: employees weren't performing their duties consistently and new employees weren't being trained effectively. At the start, there weren't really any official, existing SOPs--just rough documents of notes and vague processes. Training was handled by employees shadowing other employees until they were up to speed.
     
-    As many of the employees had enough on their plate, I decided the best approach to creating the SOPs was to write them myself using a mixture of SME interviews, gaining general product and process knowledge that applied to every department, and gathering any notes or documents that current existed. I designed a template, configure the authoring tool (MadCap Flare), and built the internal knowledge base (SharePoint) where the SOPs could be accessed (as PDFs). 
+    As many of the employees had enough on their plates, I decided the best approach to creating the SOPs was to write them myself using a mixture of SME interviews, gaining general product and process knowledge that applied to every department, and gathering any notes or documents that current existed. I designed a template, configure the authoring tool (MadCap Flare), and built the internal knowledge base (SharePoint) where the SOPs could be accessed (as PDFs). 
     
-    As of now, I've written well over a hundred SOPs, which have been well received and are being used as the source of truth to create learning modules and other training materials. 
+    As of now, I've written well over a hundred SOPs, which have been well-received and used as the source-of-truth to create learning modules and other training materials. 
     
-    This sample here is demonstrates how my typical SOPs flow. I wrote it for the Business Intelligence team. It was a process that only the manager knew how to do and with this SOP, he can delegate the task to any one else on the team. 
+    This sample demonstrates how my typical SOPs flow. I wrote it for the Business Intelligence team. It was a process that only the manager knew how to do. Now, he can delegate the task to anyone else on the team. 
     
-    The final result was a PDF with a document layout and design of my own creation.
+    The final result was a PDF with a document layout and design of my own creation, follow the link below to see the original PDF.
 
-    [:fontawesome-solid-file-pdf: View orginal PDF](../assets/pdfs/Emailing%20Invoices%20in%20Bulk%20for%20UPS.pdf){ .md-button }
+    [:fontawesome-solid-file-pdf: View original PDF](../assets/pdfs/Emailing%20Invoices%20in%20Bulk%20for%20UPS.pdf){ .md-button }
 
 __Standard Operating Procedure__
 
