@@ -24,7 +24,7 @@ Celebrating its 40th anniversary this year, the Children’s Council has been he
 
 ![alt text](../assets/images/image-12.png)
 
-“It’s hard becoming a parent — trying to figure out how to handle a new baby and all the issues that entail. It’s exciting. It’s a wonderful time, but it’s challenging trying to figure out,” Scott said.
+“It’s hard becoming a parent — trying to figure out how to handle a new baby and all the issues that entail. It’s exciting. It’s a wonderful time, but it’s challenging trying to figure it out,” Scott said.
 
 Scott said there is so much to learn about the health, safety, and development of children that raising them can be a difficult time in life for the average parent.
 
@@ -34,7 +34,7 @@ The Children’s Council also serves as a hub for the [Who Needs a Change? Diape
 
 “We offer Triple P parenting support and The Incredible Years, which are parenting support programs,” Scott said. “A lot of it is just having a sounding board to talk through different issues they are going through with their children and with other parents who are going through the same thing.”
 
-One of the oldest nonprofits in the area, the Children’s Council was started in 1977 as a grassroots effort focusing mainly on childcare centers. It was not long until it became the county’s official Smart Start agency, which directly funds Quality Support Programs and child care centers.
+One of the oldest nonprofits in the area, the Children’s Council was started in 1977 as a grassroots effort focusing mainly on childcare centers. It was not long until it became the county’s official Smart Start agency, which directly funds Quality Support Programs and childcare centers.
 
 “We have been growing since 1977 and now have a family support focus, as well. We saw the need to expand — to offer more services that would benefit children,” Scott said.
 
@@ -46,7 +46,7 @@ The Children’s Council also does a lot for local teachers, especially teachers
 
 “We offer professional development to help teachers set goals and to move the needle to get them where they need to be,” Scott said.
 
-The Children’s Council currently has six full-time staff members and 6 part-time staff members who work hard to support local children in their development years. However, it relies on many volunteers who are willing to help in any way they can and it offers several avenues where one can help, including internships for university students.
+The Children’s Council currently has six full-time staff members and 6 part-time staff members who work hard to support local children in their development years. However, it relies on many volunteers who are willing to help in any way they can, and it offers several avenues where one can help, including internships for university students.
 
 Volunteers are invaluable to this agency, and — to make it easier to connect with the organization — a website is in the works that will break down different projects people can take on.
 

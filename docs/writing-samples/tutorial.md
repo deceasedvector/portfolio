@@ -53,7 +53,7 @@ Take a look at the full example before we get started.
 
 Let's break this example down.
 
-## 1. Delcate a variable for `nodeId`
+## 1. Declare a variable for `nodeId`
 
 === "C#"
 
@@ -104,7 +104,7 @@ For Unilevel and Enrollment Trees, you must specify the `LegName` as `LegName.Em
 
 ## 4. Execute the placement
 
-After you've verified the placement with `ValidatePlacements()` in the presceding step, use the `Place([])` method to executes one or more placements or moves:
+After you've verified the placement with `ValidatePlacements()` in the preceding step, use the `Place([])` method to executes one or more placements or moves:
 
 === "C#"
 

@@ -98,7 +98,7 @@ After Accounts Receivable have changed the Sales Orders' statuses to "Ready to I
     1. Select the **SPECIFIC SENDER** checkbox.
     2. For **SENDER**, link the Employee Record from whom the emails will send.
 
-6. Under **Receipient**, in **EMAIL**, enter the receiving customer's email address.
+6. Under **Recipient**, in **EMAIL**, enter the receiving customer's email address.
 7. Under **Content**:
 
     1. Select the **CUSTOM** checkbox.

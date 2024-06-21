@@ -26,7 +26,7 @@ title: Résumé
     - Readme
     - Paligo
     - Pendo
-    - Wordpress
+    - WordPress
     - Absorb LMS
     - Adobe Creative Suite
     - Microsoft Visio
@@ -104,7 +104,7 @@ title: Résumé
 
     Zaxis - 2018
 
-    - Wrote a ~60 page manual for a new product launch, including creating the layout and graphics.
+    - Wrote a ~60-page manual for a new product launch, including creating the layout and graphics.
     - Collaborated with engineers and marketing SMEs to learn about the product and discover the best way to teach its value.
 
 - **Web & Graphic Design Intern** `On-site`
@@ -129,7 +129,7 @@ title: Résumé
 
 <div class="sessions" markdown>
 
-- **Bachelor's of Art in English**, *Appalachian State University*
+- **Bachelor of Art in English**, *Appalachian State University*
 
     Concentration in Professional Writing, Minor in Art
 
