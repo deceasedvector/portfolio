@@ -2,7 +2,7 @@
 title: Video
 ---
 
-# `Video` Integrating with FlexPay for Payment Recovery
+# Integrating with FlexPay for Payment Recovery
 
 ???+ example "Meta"
 
