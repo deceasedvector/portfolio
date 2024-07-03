@@ -6,13 +6,10 @@ title: API Guide
 
 ???+ example "Meta"
 
-    * **Tool**: Readme.io
-    * **Original**: [https://developers.directscale.com/v1.0/docs/public-api-overview](https://developers.directscale.com/v1.0/docs/public-api-overview)
-    * **About this sample**: DirectScale didn't have any API docs outside of the code generated reference docs through Azure's API Gateway. Client developers needed to know how to start using the API. 
-  
-        With that in mind, I wanted to create a simple overview of the API and provide developers with the means to get started as quickly as possible. The full plan was to build out a more user-friendly API docs and test site, but alas, I was unable to see the project fully realized.
-
-        This sample provides the developers a high-level view of the API and some steps to make that initial call with Postman.
+    * **Tool**: Readme.io in Markdown
+    * **Company**: DirectScale
+    * **Published**: [https://developers.directscale.com/v1.0/docs/public-api-overview](https://developers.directscale.com/v1.0/docs/public-api-overview)
+   
 
 ## Overview
 

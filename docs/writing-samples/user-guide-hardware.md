@@ -7,9 +7,8 @@ title: User guide (Hardware)
 ???+ example "Meta"
 
     * **Tool**: Adobe InDesign
-    * **About this sample**: For my first Technical Writing internship, I was tasked with creating a new user guide for Zaxis' next product launch. The engineers were writing the documentation previously and they were a bit too complex and wordy. 
-  
-        My goal was to create a document that was easier to follow for those not as well versed in how the device was supposed to work. Additionally, I wanted to give it a some more visual flare, matching the company's new branding. The result is this PDF that I designed and created in Adobe inDesign.
+    * **Company**: Zaxis
+    * **Published**: PDF with purchase of device
   
 <embed class="pdf" 
                src=

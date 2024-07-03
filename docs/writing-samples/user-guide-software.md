@@ -1,15 +1,14 @@
 ---
-title: User Guide (Software)
+title: User guide (software)
 ---
 
-# Customer Portal: User Guide
+# Customer Portal user guide
 
 ???+ example "Meta"
 
     * **Tool**: MadCap Flare
-    * **About this sample**: This is one of the first things I wrote for Waste Harmonics. They have a Customer Portal (built in Power BI) that featured various reports on their customer's usage data. This portal was built and released, and the support tickets started coming in on what the data represents and how to use the report features. 
-
-        With that in mind, I created this PDF that the customer's could access from their portal. When a customer or employee had questions about the portal, they were directed to this document. In many cases, this resolved their issues, and for the ones that it did not, the answers were incorporated after the fact.
+    * **Company**: Waste Harmonics
+    * **Published**: PDF in Customer Portal
 
 <embed class="pdf" 
                src=
