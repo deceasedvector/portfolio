@@ -1,5 +1,5 @@
 ---
-title: How to
+title: How-to
 ---
 
 # How to create a Dropbox Greeting
