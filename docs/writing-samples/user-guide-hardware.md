@@ -1,5 +1,5 @@
 ---
-title: User guide (Hardware)
+title: User guide (hardware)
 ---
 
 # Isaac PD Pressure Decay Leak Tester: A User's Guide

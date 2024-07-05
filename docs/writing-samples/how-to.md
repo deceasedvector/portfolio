@@ -20,7 +20,7 @@ thank you messages, to a recipient’s email from dropbox.com.
 
 To create a greeting:
 
-1. Sign in to [dropbox.com](dropbox.com).
+1. Sign in to [dropbox.com](https://www.dropbox.com).
 2. From the **Home** page, click **Create new file**.
 3. Click **Dropbox Greeting** from the menu that appears.
 4. In the window, select the folder where to save the greeting.
