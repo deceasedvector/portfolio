@@ -12,24 +12,27 @@ title: XML Reference
 
 This reference details the various Range Types used in a Commission Plan Template. 
 
-At the beginning of a Commission Plan, you must always have a `<ComPeriod>` with the template's details. Within that ComPeriod, you have a single `<VolumeRange>` that serves as the Commission Plan's default date range. 
+At the beginning of a Commission Plan, you must always have a `<ComPeriod>` with the template's details. 
+Within that, you have a single `<VolumeRange>` that serves as the Commission Plan's default date range. 
 
-Use Volume Ranges to set separate date ranges to count volume. Each Volume Range has a `Name` attribute. Set the name as anything you want. You can reference the name throughout the Commission Plan. The core part of the Volume Ranges is the Range Type.
+Use Volume Ranges to set separate date ranges to count volume. Each Volume Range has a `Name` attribute, set as anything you want. 
 
-`<RangeType>` is a period for which you are calculating commissions. The most common Range Types are `<Monthly>`,  `<Weekly>`, and  `<BiMonthly>`.
+You can reference the name throughout the Commission Plan. The core part of the Volume Ranges is the `<RangeType>`.
+
+Range Types are a period for which you are calculating commissions. The most common Range Types are `<Monthly>`,  `<Weekly>`, and  `<BiMonthly>`.
 
 ## `<Monthly>`
 
-A Range starting on the first day of the month and ending on the last. Use the `Offset` parameters to include multiple months. Typically, you only use this for a sub-Volume Range, not your main.
+A Range starting on the first of the month and ending on the last. Use the `Offset` parameters to include multiple months. Typically, you only use this for a sub-Volume Range, not your main.
 
 | Attribute      | Description                          |
 | ----------- | ------------------------------------ |
-| `StartOffset`       | Takes the main Volume Range and offsets the start date to the past by the amount entered. For example, if the current month was January and you declare `StartOffset=1`, then the `<Monthly>` range starts on December 1st.  |
-| `EndOffset`       | Takes the main Volume Range and offsets the start date to the future by the amount entered. For example, if the current month was January and you declare `EndOffset=1`, then the `<Monthly>` range ends on February 28th. |
+| `StartOffset`       | Takes the main Volume Range and offsets the start date to the past by the amount entered. For example, if the current month is January and you declare `StartOffset=1`, then the `<Monthly>` range starts on December 1st.  |
+| `EndOffset`       | Takes the main Volume Range and offsets the start date to the future by the amount entered. For example, if the current month is January and you declare `EndOffset=1`, then the `<Monthly>` range ends on February 28th. |
 
 ### Example
 
-The following example looks at the current and previous month.
+The following example looks at the current and previous months.
 
 === "XML"
 
@@ -65,7 +68,7 @@ With the following example, the Volume Range starts on `Monday`.
 
 ## `<BiMonthly>`
 
-This splits the month in have so that there are two ranges.
+This splits the month in half so that there are two ranges.
 
 | Attribute | Description |
 |---------------|--------------|
