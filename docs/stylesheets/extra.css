@@ -118,3 +118,7 @@
         border: none;
     }
 }
+
+.md-typeset code {
+  word-break:keep-all;
+}
