@@ -17,31 +17,31 @@ The Public API is a RESTful service that accepts JSON requests. With it, you can
 
 ### Environments
 
-The DirectScale Platform has both *Live* and *Stage* environments. The Public API has separate keys for these environments.
+The DirectScale Platform has both *Live* and *Stage* environments and has separate URIs for both:
 
-- *Live* site base API URL - `https://dsapi.directscale.com/v1`.
-- *Stage* site base API URL - `https://dsapi-stage.directscale.com/v1`.
+- *Live*: `https://dsapi.directscale.com/v1`
+- *Stage*: `https://dsapi-stage.directscale.com/v1`
 
 
 ### Verbs
 
-The endpoints are set up in a customer-centric way with sensibly use of the HTTP verbs.
+The endpoints are set up in a customer-centric way with sensibly use of the HTTP verbs:
 
-- `GET` - To retrieve
-- `POST` - To create
-- `DELETE` - To delete
-- `PUT` - To update
-- `PATCH` - To update by named parameter
+- `GET`: To retrieve
+- `POST`: To create
+- `DELETE`: To delete
+- `PUT`: To update
+- `PATCH`: To update by named parameter
 
 ### Call structure
 
-We've kept the call structure simple. Take the `Customers` API for example. It has a call structured with the Customer ID in the URL:
+The API uses a simple call structure. For example, the `Customers` API has a call structured with the customerID in the path:
 
 ```
 https://dsapi.directscale.com/v1/customers/{customerId}/
 ```
 
-You’ll see most of the calls based on a particular customer account are in the `Customers` API. You can manage customer-related orders, AutoShips, payment methods, services, stats, service log entries, and reset passwords in this same way with this URL structure:
+You’ll see most of the calls based on a particular customer account are in the `Customers` API. You can manage customer-related orders, AutoShips, payment methods, services, stats, service log entries, and reset passwords in this same way:
 
 `https://dsapi.directscale.com/v1/customers/{customerId}/orders` or `autoships` or `paymentmethods`, and so on.
 
