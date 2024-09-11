@@ -1,10 +1,10 @@
 ---
-title: Résumé
+title: Resume
 ---
 
-# Résumé
+# Resume
 
-[:fontawesome-regular-file-pdf: Download Résumé](assets/pdfs/JaredPeeler_Resume_2024.pdf){ .md-button }
+[:fontawesome-regular-file-pdf: Download Resume](assets/pdfs/JaredPeeler_Resume_2024.pdf){ .md-button }
 
 ## Skills
 

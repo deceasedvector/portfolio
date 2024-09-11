@@ -9,7 +9,7 @@ title: Product announcement
     * **Company**: Eventus
     * **Published**: In internal Zendesk Help Center
 
-Validus' **Order Book Replay** gives you the ability to watch the market action of an account by playing back a previous trading session using an interactive timeline. You can see how an account's activity relates to market depth and midmarket price. 
+Validus' **Order Book Replay** gives you the ability to watch the market action of an account by playing back a previous trading session using an interactive timeline. You can see how an account's activity relates to market depth and mid-market price. 
 
 **Order Book Replay** lets you see market depth, along with certain alerts to determine if the market is being manipulated.
 

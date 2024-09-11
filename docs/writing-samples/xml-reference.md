@@ -25,10 +25,10 @@ Range Types are a period for which you are calculating commissions. The most com
 
 A Range starting on the first of the month and ending on the last. Use the `Offset` parameters to include multiple months. Typically, you only use this for a sub-Volume Range, not your main.
 
-| Attribute      | Description                          |
-| ----------- | ------------------------------------ |
+| Attribute           | Description                          |
+| ------------------- | ------------------------------------ |
 | `StartOffset`       | Takes the main Volume Range and offsets the start date to the past by the amount entered. For example, if the current month is January and you declare `StartOffset=1`, then the `<Monthly>` range starts on December 1st.  |
-| `EndOffset`       | Takes the main Volume Range and offsets the start date to the future by the amount entered. For example, if the current month is January and you declare `EndOffset=1`, then the `<Monthly>` range ends on February 28th. |
+| `EndOffset`         | Takes the main Volume Range and offsets the start date to the future by the amount entered. For example, if the current month is January and you declare `EndOffset=1`, then the `<Monthly>` range ends on February 28th. |
 
 ### Example
 
@@ -48,9 +48,9 @@ The following example looks at the current and previous months.
 
 A range of a week (7 days), beginning on the day you define as the `WeekBegin`.
 
-| Attribute | Description |
+| Attribute     | Description |
 |---------------|--------------|
-| `WeekBegin`  | Assign the day of the week the range begins on (`Monday`, `Tuesday`, `Wednesday`, and so on).
+| `WeekBegin`   | Assign the day of the week the range begins on (`Monday`, `Tuesday`, `Wednesday`, and so on). |
 
 ### Example
 
@@ -70,9 +70,9 @@ With the following example, the Volume Range starts on `Monday`.
 
 This splits the month in half so that there are two ranges.
 
-| Attribute | Description |
+| Attribute     | Description |
 |---------------|--------------|
-| `SplitDay`  | The day of the month the split occurs on.
+| `SplitDay`    | The day of the month the split occurs on. |
 
 ### Example
 

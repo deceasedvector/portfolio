@@ -14,6 +14,6 @@ With a background in web development, graphic design, and a life-long love of wr
 
 I've collected a lot of skills over the years, and I'm looking for the opportunity to stretch what I've learned and take on new challenges!
 
-Look around at my writing samples and résumé. If you like what you see, let's connect!
+Look around at my writing samples and resume. If you like what you see, let's connect!
 
-[:fontawesome-solid-paper-plane: Let's connect!](mailto:jaredpeeler@gmail.com){ .md-button .md-button--primary } [:material-timeline-text: Résumé](resume){ .md-button } [:material-file-document-check: Writing samples](writing-samples/api-guide/){ .md-button }
+[:fontawesome-solid-paper-plane: Let's connect!](mailto:jaredpeeler@gmail.com){ .md-button .md-button--primary } [:material-timeline-text: Resume](resume){ .md-button } [:material-file-document-check: Writing samples](writing-samples/api-guide/){ .md-button }

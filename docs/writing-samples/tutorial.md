@@ -67,7 +67,7 @@ Most of the time, the property `TreeIndex` will be `0`, and only the `AssociateI
 
 ## 2. Declare a variable for the Node details
 
-Declare a variable that calls the `ITreeService` `GetNodeDetail(NodeId, TreeType)` method to get the upline and Leg details for the Associate (Node).
+Declare a variable that calls the `ITreeService` `GetNodeDetail(NodeId, TreeType)` method to get the up-line and Leg details for the Associate (Node).
 
 === "C#"
 
@@ -79,8 +79,8 @@ The parameters are:
 
 Parameter  | Definition
 -----------|------------
-`NodeId`   | Set to the Associate to find upline.
-`TreeType` | Set to the in which to find upline.
+`NodeId`   | Set to the Associate to find up-line.
+`TreeType` | Set to the in which to find up-line.
 
 For this example, we're placing in the Enrollment Tree (`TreeType.Enrollment`).
 
