@@ -2,7 +2,7 @@
 title: SOP
 ---
 
-# Settng up Customers as Tax Exempt
+# Phish Alert Button in Outlook
 
 ???+ example "Meta"
 
@@ -12,5 +12,5 @@ title: SOP
 
 <embed class="pdf" 
                src=
-"../../assets\pdfs\Setting up Customers as Tax Exempt.pdf"
+"../../assets\pdfs\Phish Alert Button in Outlook.pdf"
             width="1000" height="1300" markdown>
