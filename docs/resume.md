@@ -68,7 +68,7 @@ title: Resume
 
 <div class="sessions" markdown>
 
-- **Technical Document Manager** 
+- **Technical Documentation Manager** 
 
     Waste Harmonics - Victor, NY `On-site`
     
