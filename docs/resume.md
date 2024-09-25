@@ -74,7 +74,7 @@ title: Resume
     
     *2023* - *Present*
 
-    - In charge of all internal standard operating procedures, policies, and training materials. 
+    - In charge of all internal standard operating procedures (SOPs), policies, and training materials. 
     - Standardized the content strategy, style guide, and content creation workflow.
     - Managed the single-source of truth for all content in MadCap Flare, making use of variables, snippets, and multi-destination PDF publishing to maintain consistency and reduce update time.
     - Built the document repository in SharePoint, making use of UX principles to improve content discoverability.
