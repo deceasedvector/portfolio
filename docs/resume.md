@@ -68,7 +68,7 @@ title: Resume
 
 <div class="sessions" markdown>
 
-- **Technical Documentation Manager** 
+- **Documentation Manager** 
 
     Waste Harmonics - Victor, NY `On-site`
     
@@ -91,7 +91,7 @@ title: Resume
     - Used Pendo to tag every element for usage tracking and crafted in-app walkthrough guides/feature announcements.
     - Decreased sales closing timeframe by providing documentation that proved the product's value to new prospects. 
 
-- **Lead Technical Content Developer** 
+- **Lead Technical Writer** 
 
     DirectScale - Orem, UT `Hybrid`
     
