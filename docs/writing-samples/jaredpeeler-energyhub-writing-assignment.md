@@ -1,8 +1,8 @@
 ---
-title: Flicksy Loops
+title: Tumblr Loops
 ---
 
-With **Flicksy Loops**, you can upload and share short videos (up to 90 seconds). Create the Loops right in the app or upload them from your device. Share the Loops with your friends or post them to your **Flicksy Stream**.
+With **Tumblr Loops**, you can upload and share short videos (up to 90 seconds). Create the Loops right in the app or upload them from your device. Share the Loops with your friends or post them to your followers.
 
 **On this page**
 
@@ -18,15 +18,15 @@ With **Flicksy Loops**, you can upload and share short videos (up to 90 seconds)
 
     - [Sharing a Loop with friends](#sharing-a-loop-with-friends)
 
-    - [Posting a Loop to your Flicksy Stream](#posting-a-loop-to-your-flickzy-stream)
+    - [Posting a Loop to your followers](#posting-a-loop-to-your-followers)
 
 ## Requirements
 
-To post, share, and view **Flicksy Loops**, you need:
+To post, share, and view **Tumblr Loops**, you need:
 
-- [x] The [latest version of the **Flicksy** app (`v2.1.3`)](#) installed on your device
+- [x] The [latest version of the **Tumblr** app (`v2.1.3`)](#) installed on your device
 
-- [x] An [active **Flicksy** account](#)
+- [x] An [active **Tumblr** account](#)
 
 To post or share Loops, ensure they are:
 
@@ -39,13 +39,19 @@ To post or share Loops, ensure they are:
 !!! tip
     Use the built-in **Loop Editor** to edit Loops.
 
+## Discover Loops
+
+Discover Loops from the creators you follow as well as suggested creators to follow.
+
+From your **Tumblr** app, go to **:fontawesome-solid-play: Loops**.
+
 ## Uploading Loops
 
-You can upload a video from your device or create a new Loop using the **Flicksy Cam**.
+You can upload a video from your device or create a new Loop using the **Tumblr Cam**.
 
 ### Uploading from your device
 
-1. From your **Flicksy** app, go to **:octicons-video-16: Loops**.
+1. From your **Tumblr** app, go to **:fontawesome-solid-play: Loops**.
 
 1. Tap **:octicons-plus-16: Add** and choose *Upload*.
 
@@ -67,11 +73,11 @@ You can upload a video from your device or create a new Loop using the **Flicksy
 
 ### Creating a new Loop
 
-1. From your **Flicksy** app, go to **:octicons-video-16: Loops**.
+1. From your **Tumblr** app, go to **:octicons-video-16: Loops**.
 
 1. Tap **:octicons-plus-16: Add** and choose *Create*.
 
-1. From the **Flicksy Cam**, tap **:material-record-circle: Record** to begin recording. 
+1. From the **Tumblr Cam**, tap **:material-record-circle: Record** to begin recording. 
     
     !!! note
         The recording will stop automatically once 90 seconds has elapsed.
@@ -92,7 +98,7 @@ You can upload a video from your device or create a new Loop using the **Flicksy
 
 ## Posting Loops
 
-Share your Loop with your friends or post it to your **Flicksy Stream**.
+Share your Loop with your friends or post it to your **Tumblr Stream**.
 
 ### Sharing a Loop with friends
 
@@ -104,7 +110,7 @@ Share your Loop with your friends or post it to your **Flicksy Stream**.
 
 1. Tap **Send**.
 
-### Posting a Loop to your Flicksy Stream
+### Posting a Loop to your Tumblr Stream
 
 1. With your Loop open, tap **:octicons-globe-16: Post to stream**.
 
