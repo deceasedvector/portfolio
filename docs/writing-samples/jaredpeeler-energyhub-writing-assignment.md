@@ -2,7 +2,7 @@
 title: Tumblr Loops
 ---
 
-With **Tumblr Loops**, you can upload and share short videos (up to 90 seconds). Create the Loops right in the app or upload them from your device. Share the Loops with your friends or post them to your followers.
+With **Tumblr Loops**, you can upload and share short videos (up to 90 seconds). Use the built-in **Tumblr Cam** to create the Loops right in the app, or you can upload them from your device. Use the **Loop Editor** to add text and filters. Share the Loops with your friends or post them to your blog for all your followers.
 
 **On this page**
 
@@ -43,7 +43,7 @@ To post or share Loops, ensure they are:
 
 Discover Loops from the creators you follow as well as suggested creators to follow.
 
-From your **Tumblr** app, go to **:fontawesome-solid-play: Loops**.
+From your **Tumblr** app, go to **:material-play-outline: Loops**.
 
 ## Uploading Loops
 
@@ -51,9 +51,9 @@ You can upload a video from your device or create a new Loop using the **Tumblr 
 
 ### Uploading from your device
 
-1. From your **Tumblr** app, go to **:fontawesome-solid-play: Loops**.
+1. From your **Tumblr** app, go to **:material-play-outline:**.
 
-1. Tap **:octicons-plus-16: Add** and choose *Upload*.
+1. Tap **:material-plus:** and choose *Upload*.
 
 1. On the resulting **File Finder**, choose the video you want to upload.
 
@@ -63,38 +63,42 @@ You can upload a video from your device or create a new Loop using the **Tumblr 
 
     - To crop the aspect ratio, tap **:material-crop: Crop**. Drag the handles to crop the video to fill the screen.
 
-    - To trim the duration, tap **:fontawesome-solid-arrows-left-right-to-line: Trim**. Drag from either end of the **Timeline** to pick the start and end point.
+    - To trim the duration, tap **:material-format-vertical-align-center: Trim**. Drag from either end of the **Timeline** to pick the start and end point.
 
-    - To add bulit-in filters, tap **:fontawesome-solid-wand-magic-sparkles: Filters**.
+    - To add bulit-in filters, tap **:material-flare: Filters**.
 
-    - To add text, tap **:material-format-textbox: Text**.
+    - To add text, tap **:material-format-text-rotation-none: Text**.
+    
+    - To delete a Loop, tap **:material-delete: Delete**.
 
-1. When finished, tap **Upload**.
+1. When finished, tap **Save**.
 
 ### Creating a new Loop
 
-1. From your **Tumblr** app, go to **:octicons-video-16: Loops**.
+1. From your **Tumblr** app, go to **:material-play-outline:**.
 
-1. Tap **:octicons-plus-16: Add** and choose *Create*.
+1. Tap **:material-plus:** and choose *Create*.
 
 1. From the **Tumblr Cam**, tap **:material-record-circle: Record** to begin recording. 
     
     !!! note
         The recording will stop automatically once 90 seconds has elapsed.
 
-1. To stop recording, tap **:material-stop: Stop**. The recorded video opens in the **Loop Editor**.
+1. To stop recording, tap **:material-stop:**. The recorded video opens in the **Loop Editor**.
 
 1. Edit the video:
 
     - To crop the aspect ratio, tap **:material-crop: Crop**. Drag the handles to crop the video to fill the screen.
 
-    - To trim the duration, tap **:fontawesome-solid-arrows-left-right-to-line: Trim**. Drag from either end of the **Timeline** to pick the start and end point.
+    - To trim the duration, tap **:material-format-vertical-align-center: Trim**. Drag from either end of the **Timeline** to pick the start and end point.
 
-    - To add bulit-in filters, tap **:fontawesome-solid-wand-magic-sparkles: Filters**.
+    - To add bulit-in filters, tap **:material-flare: Filters**.
 
-    - To add text, tap **:material-format-textbox: Text**.
+    - To add text, tap **:material-format-text-rotation-none: Text**.
+  
+    - To delete a Loop, tap **:material-delete: Delete**.
 
-1. When finished, tap **Add**.
+1. When finished, tap **Save**.
 
 ## Posting Loops
 
