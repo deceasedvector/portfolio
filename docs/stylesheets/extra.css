@@ -122,3 +122,8 @@
 .md-typeset code {
   word-break:keep-all;
 }
+
+.md-typeset a {
+  color: var(--md-primary-fg-color) !important;
+  text-decoration: underline;
+}
