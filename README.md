@@ -8,7 +8,7 @@ With a background in **web development**, **graphic design**, and a life-long lo
 
 I've collected a lot of skills over the years, and I'm looking for the opportunity to stretch what I've learned and take on new challenges!
 
-Look around at my **writing samples** and **résumé**. If you like what you see, let's connect!
+Look around at my **writing samples** and **resume**. If you like what you see, let's connect!
 
 - [Let's connect!](mailto:jaredpeeler@gmail.com) 
 - [Resume](https://deceasedvector.github.io/portfolio/resume/)
