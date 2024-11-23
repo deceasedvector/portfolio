@@ -6,61 +6,36 @@ title: Resume
 
 [:fontawesome-regular-file-pdf: Download Resume](assets/pdfs/JaredPeeler_Resume_2024.pdf){ .md-button }
 
+- Email: jaredpeeler@gmail.com
+- Phone: 1-336-501-8802
+- Location: Rochester, NY
+- LinkedIn: linkedin.com/in/jaredpeeler
+
+## Professional Summary
+
+Technical writing leader with 5+ years of experience creating user-centered documentation for SaaS platforms, APIs, and enterprise software. Proven track record of implementing modern documentation workflows that reduce support burden and accelerate user adoption.
+
 ## Skills
 
-=== "General"
+### Documentation Expertise
 
-    - Visual communication
-    - Clear/concise communication
-    - Audience analysis
-    - Research
-    - Testing/Quality assurance
-    - Project management
-    - Docs-as-code workflow
-    - Accessibility principles
-    - Graphic design
-    - Structured authoring
+- **Technical Writing**: API documentation, user guides, SOPs, release notes, UX copy
+- **Content Strategy**: Information architecture, style guides, docs-as-code workflows
+- **Core Competencies**: Visual communication, audience analysis, accessibility, structured authoring
 
-=== "Tools"
+### Technical Tools
 
-    - Snagit
-    - Markdown
-    - AsciiDoc
-    - Zendesk
-    - Salesforce
-    - Figma
-    - Adobe Creative Suite
-    - MadCap Flare
-    - MkDocs
-    - Jekyll
-    - Jira/Confluence
-    - Visual Studio Code
-    - Azure DevOps
-    - GitHub
-    - Pendo
-    - Google Analytics
-    - Doc Detective
-    - Readme
+- **Documentation Platforms**: MadCap Flare, MkDocs, Jekyll, Readme.io, Zendesk
+- **Development Tools**: Git, Visual Studio Code, Azure DevOps, GitHub
+- **Design & Multimedia**: Adobe Creative Suite, Figma, Snagit
 
-=== "Programmatic"
+### Technical Skills
 
-    - Command-line Git
-    - JavaScript
-    - CI/CD
-    - HTML
-    - CSS
-    - YAML/JSON
-    - OpenAPI/Swagger
+- **Web Technologies**: HTML, CSS, JavaScript, YAML/JSON
+- **API Documentation**: OpenAPI/Swagger, REST APIs
+- **Analytics & Testing**: Pendo, Google Analytics, Doc Detective
 
-=== "Markup"
-
-    - Markdown
-    - AsciiDoc
-    - DITA
-    - reStructuredText
-    - Mermaid
-
-## Experience
+## Professional Experience
 
 <div class="sessions" markdown>
 
@@ -68,53 +43,45 @@ title: Resume
 
     Waste Harmonics - Victor, NY `On-site`
     
-    Waste Management Broker | *October 2023 - Present*
+    *Enterprise Waste Management Solutions Provider* | October 2023 - Present
 
-    - Head writer of internal standard operating procedures, policies, work instructions, and reference materials.
-    - Built a curated internal knowledge base using a docs-as-code workflow, MkDocs static site generator, deployed to Azure Static Web Apps, and source-controlled with Git.
-    - Set up testing automation to manage outdated content and automatic screenshot updates.
-    - Collaborated with department heads to develop and streamline new inter-departmental processes.
-    - Documentation types: Conceptual Overviews, SOPs, Policies, Flowcharts, Work Instructions, Reference Material, User Guides
-
+    - Built comprehensive internal knowledge base  using MkDocs and Azure Static Web Apps
+    - Established automated testing workflows for content validation and screenshot updates
+    - Created and maintained company-wide documentation standards and templates
+    - Collaborated with department heads to document and optimize cross-functional workflows
 
 - **UX/Technical Writer**
 
     Eventus - Austin, TX `Remote`
     
-    SaaS Stock Market Surveillance | *November 2021 - May 2023*
+    *Financial Market Surveillance Platform* | November 2021 - May 2023
 
-    - Sole writer for SaaS customer-facing UI and conceptual documentation.
-    - Built the Zendesk Help Center that reduced support ticket resolution time and helped Sales with new signings.
-    - Set up and administered Pendo for usage tracking and in-app guidance that directly affected new product strategies, user experience design, and customer onboarding.
-    - Managed and curated the internal Confluence wiki, supporting internal processes and developer documentation.
-    - Wrote, edited, and narrated video overviews of product features using Adobe Creative Cloud.
-    - Wrote new UX copy for the revamped version of the app.
-    - Documentation types: Conceptual Overviews, UX copy, UI documentation, In-app Guides, Videos, Product Announcements
- 
+    - Designed and launched comprehensive Zendesk Help Center, measurably reducing support ticket resolution time
+    - Implemented and managed Pendo analytics and in-app guidance to improve user onboarding
+    - Led UX writing initiatives for platform redesign, enhancing user experience
+    - Developed and maintained internal Confluence wiki for developer documentation
+    - Created video tutorials and feature documentation supporting enterprise client adoption
 
 - **Lead Technical Writer** 
 
     DirectScale - Orem, UT `Hybrid`
     
-    SaaS Direct Sales Management | *October 2019 - November 2021*
+    *Direct Sales Management Platform* | October 2019 - November 2021
 
-    - Promoted from intern to Technical Writer to Lead Technical Writer.
-    - Built the Zendesk Help Center with over 700 docs that reduced support ticket resolution time and helped Sales with new signings.
-    - Built a Readme.io developer documentation site featuring conceptual overviews, code examples, and Rest/.NET API documentation.
-    - Wrote, edited, and narrated video overviews of product features using Adobe Creative Cloud.
-    - Documentation types: Conceptual Overviews, How-tos, Tutorials, Troubleshooting, Quick Start Guides, Vidoes, Developer Documentation, API Documentation, Weekly Release Notes
-
+    - Built and maintained Zendesk knowledge base with over 700 articles
+    - Created developer documentation featuring conceptual overviews, code examples, and API documentation using Readme.io
+    - Produced weekly release notes and feature announcement videos
+    - Progressed from intern to Lead Technical Writer based on documentation impact
 
 - **Technical Writing Intern** 
 
     Zaxis - West Valley City, UT `Remote`
     
-    Medical Device Manufacturer | *May 2018 - August 2018*
+    *Medical Device Manufacturer* | May 2018 - August 2018
 
-    - Wrote, designed, and published a user guide for a new device launch.
-    - Interviewed engineers, managers, and marketing to get expert information.
-    - Documentation types: User Guide
-
+    - Created user documentation for new medical device launch
+    - Collaborated with engineering and marketing teams to gather technical requirements
+    - Delivered comprehensive user guide meeting product launch deadlines
 
 </div>
 
