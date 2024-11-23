@@ -4,12 +4,12 @@ title: Resume
 
 # Resume
 
-[:fontawesome-regular-file-pdf: Download Resume](assets/pdfs/JaredPeeler_Resume_2024.pdf){ .md-button }
+[:fontawesome-regular-file-pdf: Download Resume](assets/pdfs/Resume-Jared-Peeler-Technical-Writer.pdf){ .md-button }
 
-- Email: jaredpeeler@gmail.com
-- Phone: 1-336-501-8802
-- Location: Rochester, NY
-- LinkedIn: linkedin.com/in/jaredpeeler
+- **Email**: [jaredpeeler@gmail.com](mailto:jaredpeeler@gmail.com)
+- **Phone**: [1-336-501-8802](tel:1-336-501-8802)
+- **Location**: Rochester, NY
+- **LinkedIn**: [linkedin.com/in/jaredpeeler](https://www.linkedin.com/in/jaredpeeler)
 
 ## Professional Summary
 
