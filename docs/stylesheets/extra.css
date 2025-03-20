@@ -121,4 +121,5 @@
 
 .md-typeset code {
   word-break:keep-all;
+  border: 1px solid;
 }

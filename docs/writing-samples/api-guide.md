@@ -1,5 +1,5 @@
 ---
-title: API Guide
+title: API Getting Started Guide
 ---
 
 # Getting started with DirectScale's API

@@ -7,7 +7,7 @@ title: User guide (software)
 ???+ example "Meta"
 
     * **Tool**: MadCap Flare
-    * **Company**: Waste Harmonics
+    * **Company**: Waste Harmonics Keter
     * **Published**: PDF in Customer Portal
 
 <embed class="pdf" 
