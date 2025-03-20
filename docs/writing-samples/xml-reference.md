@@ -12,7 +12,7 @@ title: XML Reference
 
 This reference details the various Range Types used in a Commission Plan Template. 
 
-At the beginning of a Commission Plan, you must always have a `<ComPeriod>` with the template's details. 
+At the beginning of a Commission Plan, you must always have a `<ComPeriod>` with the template details. 
 Within that, you have a single `<VolumeRange>` that serves as the Commission Plan's default date range. 
 
 Use Volume Ranges to set separate date ranges to count volume. Each Volume Range has a `Name` attribute, set as anything you want. 
