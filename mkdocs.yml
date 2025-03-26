@@ -113,9 +113,9 @@ nav:
 
   - index.md
   - Writing Samples:
-    - conceptual-overview.md
-    - sop.md
-    - how-to.md
-    - feature-article.md
-    - user-guide-hardware.md
-    - video.md
+    - writing-samples/conceptual-overview.md
+    - writing-samples/sop.md
+    - writing-samples/how-to.md
+    - writing-samples/feature-article.md
+    - writing-samples/user-guide-hardware.md
+    - writing-samples/video.md
