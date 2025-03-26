@@ -1,5 +1,5 @@
 ---
-title: Standard operating procedure)
+title: Standard operating procedure
 ---
 
 # Permanent Services Scheduling Process Guide & Instructions
