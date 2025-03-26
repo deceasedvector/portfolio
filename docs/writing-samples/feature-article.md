@@ -1,5 +1,5 @@
 ---
-title: "Feature article"
+title: Feature article
 ---
 
 # Starting them off right: the Children’s Council of Watauga County and how you can help

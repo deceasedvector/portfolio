@@ -108,3 +108,14 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+
+nav:
+
+  - index.md
+  - Writing Samples:
+    - conceptual-overview.md
+    - sop.md
+    - how-to.md
+    - feature-article.md
+    - user-guide-hardware.md
+    - video.md

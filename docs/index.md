@@ -2,11 +2,9 @@
 title: Resume
 ---
 
-# Resume
-
 [:fontawesome-regular-file-pdf: Download Resume](assets/pdfs/Technical_Writer_Jared_Peeler_Resume_2025.pdf){ .md-button }
 
-- **Location**: Rochester, NY
+- **Location**: Western New York
 - **Email**: [jaredpeeler@gmail.com](mailto:jaredpeeler@gmail.com)
 - **LinkedIn**: [linkedin.com/in/jaredpeeler](https://www.linkedin.com/in/jaredpeeler)
 

@@ -1,5 +1,5 @@
 ---
-title: SOP
+title: Work instructions
 ---
 
 # Scheduling Permanent Service from a Support Case
