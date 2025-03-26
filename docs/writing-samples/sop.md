@@ -1,8 +1,8 @@
 ---
-title: Work instructions
+title: Standard Operating Procedure
 ---
 
-# Scheduling Permanent Service from a Support Case
+# Permanent Services Scheduling Process Guide & Instructions
 
 ???+ example "Meta"
 
@@ -12,5 +12,5 @@ title: Work instructions
 
 <embed class="pdf" 
                src=
-"../../assets\pdfs\Scheduling-Permanent-Service-from-a-Support-Case.pdf"
+"../../assets\pdfs\sop.pdf"
             width="1000" height="1300" markdown>
