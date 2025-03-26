@@ -10,8 +10,6 @@ title: Resume
 
 ## Skills
 
-### Documentation Expertise
-
 - **Technical Writing**: API documentation, user guides, SOPs, release notes, UX copy
 - **Content Strategy**: Information architecture, style guides, docs-as-code workflows
 - **Core Competencies**: Visual communication, audience analysis, accessibility, structured authoring
