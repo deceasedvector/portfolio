@@ -1,13 +1,13 @@
 # Project information
 site_name: Jared Peeler
-site_url: https://deceasedvector.github.io/portfolio
+site_url: https://jaredpeeler.com
 
 # Repository
 repo_url: https://github.com/deceasedvector/portfolio
 repo_name: deceasedvector/portfolio
 
 # Copyright
-copyright: Copyright &copy; 2024 Jared Peeler
+copyright: Copyright &copy; 2025 Jared Peeler
 
 # Configuration
 theme:
@@ -44,8 +44,8 @@ theme:
   palette:
       primary: custom
       accent: custom
-  logo: assets\images\logo-01.svg
-  favicon: assets\images\logo-01.svg
+  logo: assets/images/logo-01.svg
+  favicon: assets/images/logo-01.svg
 
 # Extensions
 markdown_extensions:
@@ -72,6 +72,7 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      auto_title: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -115,7 +116,7 @@ nav:
   - Writing Samples:
     - writing-samples/conceptual-overview.md
     - writing-samples/sop.md
-    - writing-samples/how-to.md
-    - writing-samples/feature-article.md
+    - writing-samples/product-announcement.md
+    - writing-samples/tutorial.md
     - writing-samples/user-guide-hardware.md
     - writing-samples/video.md

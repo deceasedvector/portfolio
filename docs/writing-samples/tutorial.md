@@ -1,118 +1,217 @@
 ---
-title: Tutorial
+title: Code tutorial
 ---
 
-# Placing an Associate in a Tree 
+# Placing an associate in a tree
 
-???+ example "Meta"
+Learn how to place Associates in specific positions within DirectScale's tree structures using the Client Extension.
+Tree placement determines organizational relationships in multi-level marketing systems and affects commissions, rank qualifications, and reporting.
 
-    * **Tool**: Readme.io in Markdown
-    * **Company**: DirectScale
-    * **Published**: [https://developers.directscale.com/v1.0/docs/placing-an-associate-in-a-tree](https://developers.directscale.com/v1.0/docs/placing-an-associate-in-a-tree)
+!!! warning
+    Tree structures are critical to your business operations. Incorrect placements can be difficult to reverse and may impact commissions and genealogy. 
+    Always test thoroughly in a non-production environment before implementing in production.
 
-## Introduction
+## Before you begin
 
-There are times when you may need to place an individual in the Tree using custom code. The Client Extension is a great tool to aid in this endeavor, but the method and syntax aren't always obvious. With this resource, we'll break down an example of placing an Associate in a Tree structure.
+Understand these key concepts:
 
-!!! warning "Important"
-    Trees are important. Making mistakes can be challenging to fix. Please make sure you're comfortable with Tree structure, Tree types and that you know how to test and check the results of moves in Corporate Admin.
+* **Node**: A position in a tree structure containing an associate, with information about its relationship to other nodes.
 
-### Before we start
+* **TreeType**: DirectScale supports many tree structures:
 
-It's essential to understand the concept of a "Node". You'll see this term referenced throughout this resource and others that reference Tree movements/placement. 
+  * **Enrollment Tree**: Tracks sponsor relationships.
+  * **Unilevel Tree**: Genealogy where each associate can have unlimited first-level downlines.
+  * **Binary Tree**: Structure with a max of two direct downlines per node.
+  * **Matrix Tree**: Structure with fixed width and unlimited depth. For example, 3×3, 4×7.
 
-Essentially, a Node is a spot in the Tree with information about itself, such as who the parent Node is and who it contains. It's common to refer to a Node as an Associate because, for most, that's what it is.
+* **LegName**: Designates a node's position relative to its upline (important for tree types with named positions like Binary's Left/Right).
 
-## Full Example
+## Initialize dependencies
 
-Take a look at the full example before we get started.
+Inject the necessary services into your class:
 
-=== "C#"
+```csharp
+private readonly ITreeService _treeService;
+private readonly IAssociateService _associateService;
 
-    ```csharp
-    var _nodeId = new DirectScale.Disco.Extension.NodeId(_associate.AssociateId);
-    var enrollernodeDetail = _treeService.GetNodeDetail(_nodeId, TreeType.Enrollment);
+public YourClass(ITreeService treeService, IAssociateService associateService)
+{
+    _treeService = treeService;
+    _associateService = associateService;
+}
+```
 
+## Create a nodeId
+
+Reference the associate you want to place:
+
+```csharp
+// For a standard placement
+int associateId = 12345; 
+var nodeId = new DirectScale.Disco.Extension.NodeId(associateId);
+
+// For Matrix trees where an associate can appear multiple times
+// var nodeId = new DirectScale.Disco.Extension.NodeId(associateId, treeIndex: 0);
+```
+
+## Determine the upline position
+
+Identify where to place the associate:
+
+```csharp
+// Get the associate's current position in the Enrollment tree
+var enrollmentNodeDetail = _treeService.GetNodeDetail(nodeId, TreeType.Enrollment);
+
+// Get their enroller (upline in the Enrollment tree)
+var uplineId = enrollmentNodeDetail.UplineId;
+```
+
+## Create the placement object
+
+Define where and how to place the associate:
+
+```csharp
+var placement = new Placement 
+{ 
+    Tree = TreeType.Unilevel,  // Target tree type 
+    NodeDetail = new NodeDetail 
+    { 
+        NodeId = nodeId,       // The associate to place
+        UplineId = uplineId,   // Where to place them
+        UplineLeg = LegName.Empty  // Position (Empty for Unilevel/Enrollment)
+    }
+};
+```
+
+!!! note 
+    Use the appropriate LegName for your tree type:
+
+    * Unilevel/Enrollment trees: `LegName.Empty`
+    * Binary trees: `LegName.Left` or `LegName.Right`
+    * Matrix trees: `LegName.Position1`, `LegName.Position2`, etc.
+
+## Validate the placement
+
+Always validate placements before executing them:
+
+```csharp
+try
+{
+    _treeService.ValidatePlacements(new[] { placement });
+}
+catch (Exception ex)
+{
+    // Handle validation errors
+    Console.WriteLine($"Placement validation failed: {ex.Message}");
+    return; // Don't proceed if validation fails
+}
+```
+
+## Execute the placement
+
+After validation, place the associate:
+
+```csharp
+try
+{
+    _treeService.Place(new[] { placement });
+    Console.WriteLine("Placement successful");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Placement failed: {ex.Message}");
+    // Implement appropriate error handling
+}
+```
+
+This example places an associate in the Unilevel tree under their enroller:
+
+```csharp
+public void PlaceAssociateUnderEnroller(int associateId)
+{
     try
     {
-        _treeService.ValidatePlacements(
-            new Placement[] {
-                new Placement() { 
-                    Tree = TreeType.Unilevel, 
-                    NodeDetail = new NodeDetail() { NodeId = _nodeId, UplineId = enrollernodeDetail.UplineId, UplineLeg = LegName.Empty } 
-                }
-            });
-        _treeService.Place(new Placement[] { 
-            new Placement() { 
-                Tree = TreeType.Unilevel, 
-                NodeDetail = new NodeDetail() { NodeId = _nodeId, UplineId = enrollernodeDetail.UplineId, UplineLeg = LegName.Empty } 
-            }; 
-        });
-    }
-    ```
-
-Let's break this example down.
-
-## 1. Declare a variable for `nodeId`
-
-=== "C#"
-
-    ```csharp
-    var _nodeId = new DirectScale.Disco.Extension.NodeId(_associate.AssociateId);
-    ```
-
-We set the variable equal to the `nodeId` class, which indicates a Tree placement with the property set to `AssociateId`. There's another property you can use as well called `TreeIndex`. 
-
-Most of the time, the property `TreeIndex` will be `0`, and only the `AssociateId` will be used unless you allow Associates to be placed in the same Tree multiple times (like in Matrix Trees).
-
-## 2. Declare a variable for the Node details
-
-Declare a variable that calls the `ITreeService` `GetNodeDetail(NodeId, TreeType)` method to get the up-line and Leg details for the Associate (Node).
-
-=== "C#"
-
-    ```csharp
-    var enrollernodeDetail = _treeService.GetNodeDetail(_nodeId, TreeType.Enrollment);
-    ```
-
-The parameters are:
-
-Parameter  | Definition
------------|------------
-`NodeId`   | Set to the Associate to find up-line.
-`TreeType` | Set to the in which to find up-line.
-
-For this example, we're placing in the Enrollment Tree (`TreeType.Enrollment`).
-
-## 3. Validate the Associate's placement
-
-Use the `ValidatePlacements(Placement[])` method to validate the changes before the placements are executed. This method is vital to call first to make sure you don't create circular references.
-
-=== "C#"
-
-    ```csharp
-    _treeService.ValidatePlacements(
-        new Placement[] {
-            new Placement() { 
-                Tree = TreeType.Unilevel, 
-                NodeDetail = new NodeDetail() { NodeId = _nodeId, UplineId = enrollernodeDetail.UplineId, UplineLeg = LegName.Empty } 
-            }
-    });
-    ```
-
-For Unilevel and Enrollment Trees, you must specify the `LegName` as `LegName.Empty` and not `null` or you'll get null reference exception errors. For Binary or Matrix Trees, you can use the appropriate `LegNames` (`LegName.Left`, `LegName.Middle`, `LegName.Right`, and so on).
-
-## 4. Execute the placement
-
-After you've verified the placement with `ValidatePlacements()` in the preceding step, use the `Place([])` method to executes one or more placements or moves:
-
-=== "C#"
-
-    ```csharp
-     _treeService.Place(new Placement[] { 
-        new Placement() { 
+        // Create the NodeId
+        var nodeId = new DirectScale.Disco.Extension.NodeId(associateId);
+        
+        // Get enrollment details to find the enroller
+        var enrollmentNodeDetail = _treeService.GetNodeDetail(nodeId, TreeType.Enrollment);
+        
+        // Create the placement object
+        var placement = new Placement 
+        { 
             Tree = TreeType.Unilevel, 
-            NodeDetail = new NodeDetail() { NodeId = _nodeId, UplineId = enrollernodeDetail.UplineId, UplineLeg = LegName.Empty } 
-            }; 
-    });
-    ```
+            NodeDetail = new NodeDetail 
+            { 
+                NodeId = nodeId, 
+                UplineId = enrollmentNodeDetail.UplineId, 
+                UplineLeg = LegName.Empty 
+            } 
+        };
+        
+        // Validate first
+        _treeService.ValidatePlacements(new[] { placement });
+        
+        // Execute the placement
+        _treeService.Place(new[] { placement });
+        
+        Console.WriteLine($"Associate {associateId} successfully placed in Unilevel tree");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error placing associate in tree: {ex.Message}");
+        // Additional error handling as appropriate
+    }
+}
+```
+
+## Verify tree placement
+
+After placement, verify the associate's position:
+
+```csharp
+public bool VerifyPlacement(int associateId, int expectedUplineId, TreeType treeType)
+{
+    var nodeId = new DirectScale.Disco.Extension.NodeId(associateId);
+    var nodeDetail = _treeService.GetNodeDetail(nodeId, treeType);
+    
+    return nodeDetail.UplineId.AssociateId == expectedUplineId;
+}
+```
+
+## Common scenarios
+
+### Place in a Binary Tree with specific leg
+
+```csharp
+var binaryPlacement = new Placement 
+{ 
+    Tree = TreeType.Binary, 
+    NodeDetail = new NodeDetail 
+    { 
+        NodeId = nodeId, 
+        UplineId = targetUplineId, 
+        UplineLeg = LegName.Right  // or LegName.Left
+    } 
+};
+```
+
+### Place multiple Associates at once
+
+```csharp
+var placements = new[] 
+{
+    new Placement { Tree = TreeType.Unilevel, NodeDetail = /* details for first associate */ },
+    new Placement { Tree = TreeType.Unilevel, NodeDetail = /* details for second associate */ }
+};
+
+_treeService.ValidatePlacements(placements);
+_treeService.Place(placements);
+```
+
+## Troubleshooting
+
+* **Circular Reference Errors**: ensure you're not creating loops in the tree structure.
+* **Invalid Leg Errors**: verify you're using the correct LegName for the tree type.
+* **Position Already Filled**: check if the target position already contains another associate.
+* **TreeType Mismatch**: confirm the TreeType is consistent between validation and placement.

@@ -123,3 +123,8 @@
   word-break:keep-all;
   border: 1px solid;
 }
+
+.md-typeset pre code {
+  word-break:keep-all;
+  border: none;
+}

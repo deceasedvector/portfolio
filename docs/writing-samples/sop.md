@@ -1,14 +1,8 @@
 ---
-title: Standard operating procedure
+title: Job aid
 ---
 
 # Permanent Services Scheduling Process Guide & Instructions
-
-???+ example "Meta"
-
-    * **Tool**: Mkdocs in Markdown
-    * **Company**: Waste Harmonics Keter
-    * **Published**: Article in internal Knowledge Base
 
 <embed class="pdf" 
                src=

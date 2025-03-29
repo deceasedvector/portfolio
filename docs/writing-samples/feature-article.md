@@ -1,14 +1,8 @@
 ---
-title: Feature article
+title: News article
 ---
 
 # Starting them off right: the Children’s Council of Watauga County and how you can help
-
-???+ example "Meta"
-
-    * **Tool**: Microsoft Word
-    * **Company**: High Country Press/Appalachian State University
-    * **Published**: [https://www.hcpress.com/front-page/people-helping-people-series-asu-students-fifth-article-explores-childrens-council-watauga-county.html](https://www.hcpress.com/front-page/people-helping-people-series-asu-students-fifth-article-explores-childrens-council-watauga-county.html)
 
 ![alt text](../assets/images/image-11.png)
 
