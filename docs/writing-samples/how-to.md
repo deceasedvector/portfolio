@@ -4,10 +4,6 @@ title: How-to
 
 # How to create a Dropbox Greeting
 
-???+ example "Meta"
-    * **Tool**: Mkdocs in Markdown
-    * **Company**: Dropbox
-
 > This feature is available to users on the Dropbox Plus, Professional, and Family plans.
 
 With Dropbox Greeting, you can send customizable greetings, such as birthday greetings or

@@ -2,95 +2,119 @@
 title: Product announcement
 ---
 
-# `New` Order Book Replay
+# `New` Introducing Order Book Replay
 
-???+ example "Meta"
-    * **Tool**: Zendesk
-    * **Company**: Eventus
-    * **Published**: In internal Zendesk Help Center
+Eventus is excited to announce **Order Book Replay**, a powerful new tool that transforms how you analyze trading sessions. 
+This feature lets you replay market activity with precise timeline control, revealing relationships between account actions, market depth, and price movements. Order Book Replay helps you identify potential market manipulation.
 
-Validus' **Order Book Replay** gives you the ability to watch the market action of an account by playing back a previous trading session using an interactive timeline. You can see how an account's activity relates to market depth and mid-market price. 
+## What is Order Book Replay?
 
-**Order Book Replay** lets you see market depth, along with certain alerts to determine if the market is being manipulated.
+Order Book Replay provides an interactive visualization of historical trading sessions, allowing you to:
 
 ![Order Book Replay](../assets/images/obr.png)
 
-* Play through a timeline for an alert
-* Step through filtered internal activity
-* Choose from three chart modes (Depth Discrete, Depth Cumulative, and Depth Data)
-* Utilize conditional filters to narrow down to the most important information
+- Play through complete market timelines
+- Analyze the relationship between account activity and market depth
+- Monitor mid-market price movements with clear visual indicators
+- Apply conditional filters to focus on specific events or patterns
+- Switch between multiple visualization modes for different analytical perspectives
 
-See the [Features](#features).
+## Key features
 
-## Release Phases
+### Interactive Timeline Controls
 
-A three-phased rollout of **Order Book Replay** is planned: 
+The intuitive player interface gives you complete control over your analysis:
+
+![Order Book Replay player controls](../assets/images/obr-player.png)
+
+- **Play/Pause**: start or stop the replay at any moment
+- **Timeline Scrubbing**: quickly navigate to specific points in time
+- **Activity Navigation**: jump directly to filtered account activities using fast-forward and rewind buttons
+- **Time Display**: current position shown in precise timestamp format
+
+### Multiple visualization options
+
+Choose the view that best supports your analysis needs:
+
+#### Depth Discrete View
+
+Displays order book size at individual price points, showing specific market interest levels.
+
+![Depth Discrete visualization showing size at individual prices](../assets/images/obr-discrete.png)
+
+#### Depth Cumulative View
+
+Shows aggregated size across price levels, revealing the overall market liquidity structure.
+
+![Depth Cumulative visualization showing aggregated size](../assets/images/obr-cumulative.png)
+
+#### Depth Data View
+
+Presents exact numerical values in a table format for precise analysis.
+
+![Depth Data table showing exact figures](../assets/images/obr-data.png)
+
+!!! note 
+    Both graphical modes (Discrete and Cumulative) display the mid-market price with directional indicators showing price trend movement.
+
+### Advanced filtering
+
+Apply precise filters to focus your analysis on the most relevant information.
+
+### Integrated market and account activity
+
+View external market executions alongside internal account activity in a consolidated interface:
+
+![Account activity and execution display](../assets/images/obr-exlusions.png)
+
+- **Expandable Sections**: resize or hide sections as needed
+
+- **Contextual Labeling**: activities labeled according to your filter selections
+
+- **Detailed Analysis**: open any activity in Time + Sales Viewer with a single click
+
+## Implementation roadmap
+
+Order Book Replay will roll out in three strategic phases:
 
 <div class="sessions" markdown>
 
-* **Phase One**
-  
-    Before **Order Book Replay** is officially released, we are making some additional updates to the existing **Time + Sales Viewer** to lay the groundwork. 
-    
-    With Phase One, the **Time + Sales Viewer** is getting a visual upgrade as shown in the following image. Additionally, an improved filtering menu is being added that you can access by clicking ![Filter](../assets/images/filter.png). 
+- **Phase 1: foundational update**
 
-    ![Time + Sales Viewer](../assets/images/tns.png)
+    - Visual refresh of the existing Time + Sales Viewer
+    - Enhanced filtering capabilities
+    - Improved user interface
+    - Level One data support
 
-    !!! note
-        Phases One and Two will include Level One data only.
+    ![Updated Time + Sales Viewer](../assets/images/tns.png)
 
-* **Phase Two**
+- **Phase 2: Order Book Replay launch**
 
-    The official release of **Order Book Replay**. Within the **Order Book Replay** interface, you’ll be able to:
+    - Full Order Book Replay functionality
+    - Interactive timeline with playback controls
+    - Multiple visualization modes
+    - Advanced filtering options
+    - Continued Level One data support
 
-    * Toggle between different chart modes
-    * Use an interactive timeline with pause and play buttons
-    * Filter data
-    * Easily distinguish between internal and market data
-  
-* **Phase Three**
+- **Phase 3: Level 2 data expansion**
 
-    Update to feature Level Two data. If your system does not feature Level Two data, you can contact your Customer Success Manager to purchase an upgrade.
+    - Complete Level 2 data integration
+    - Enhanced depth visualization
+    - Additional analytical capabilities
 
-</div>
+!!! note 
+    Level 2 data support requires system compatibility. Contact your Customer Success Manager to verify eligibility or arrange an upgrade.
 
 ## Getting Started
 
-Order Book Replay is not enabled by default. If you’d like to enable this feature, contact your Customer Success Manager. 
+Order Book Replay is disabled by default. To enable this feature:
 
-## Features
+1. Contact your Customer Success Manager.
 
-### Player
+2. Request Order Book Replay activation for your account.
 
-![OBR Player](../assets/images/obr-player.png)
+3. Once enabled, access Order Book Replay in Validus.
 
-Using the Player, you can play or pause the Order Book Replay. The Player displays the time based on your filter selection. 
+---
 
-By scrubbing the timeline with your mouse, you can adjust your location in the replay. The fast forward and fast backward buttons step you to the next filtered account(s) activity and pauses the player at that time. 
-
-### Depth Charts
-
-**Depth Discrete**: Shows the market size across any given order book price
-
-![Depth Discrete](../assets/images/obr-discrete.png)
-
-**Depth Cumulative**: Show the cumulative size/spread of the order book
-
-![Depth Cumulative](../assets/images/obr-cumulative.png)
-
-**Depth Data**: A table that lists out the exact figures of size at each price
-
-![Depth Data](../assets/images/obr-data.png)
-
-!!! note
-    Both **Discrete** and **Cumulative** modes show the mid-market price and an arrow next to it will indicate whether the price is trending up or down.
-
-### Executions and Internal Activity
-
-![Depth Data](../assets/images/obr-exlusions.png)
-
-In the **Executions** and **Account Name Activity** areas, you can view external and internal order book data. You can drag and expand/minimize the account activity area as needed. 
-
-The **Account Name Activity** area is labeled to match the chosen filter. 
-
-Click the **View Detail** link to open another browser tab to the **Time + Sales Viewer** for that specific activity.
+For more information about Order Book Replay, contact your Customer Success Manager.

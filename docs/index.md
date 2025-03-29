@@ -20,7 +20,7 @@ title: Resume
 - **API Documentation**: OpenAPI/Swagger, REST APIs
 - **Analytics & Testing**: Pendo, Google Analytics, Doc Detective
 
-## Professional Experience
+## Experience
 
 <div class="sessions" markdown>
 

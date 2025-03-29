@@ -1,14 +1,8 @@
 ---
-title: API Getting Started Guide
+title: API quick start guide
 ---
 
 # Getting started with DirectScale's API
-
-???+ example "Meta"
-
-    * **Tool**: Readme.io in Markdown
-    * **Company**: DirectScale
-    * **Published**: [https://developers.directscale.com/v1.0/docs/public-api-overview](https://developers.directscale.com/v1.0/docs/public-api-overview)
    
 
 ## Overview

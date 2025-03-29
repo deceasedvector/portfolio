@@ -2,13 +2,7 @@
 title: User guide (hardware)
 ---
 
-# Isaac PD Pressure Decay Leak Tester: A User's Guide
-
-???+ example "Meta"
-
-    * **Tool**: Adobe InDesign
-    * **Company**: Zaxis
-    * **Published**: PDF with purchase of device
+# Isaac PD Pressure Decay Leak Tester: A User's Guide `Sample`
   
 <embed class="pdf" 
                src=
