@@ -15,16 +15,16 @@ Tree placement determines organizational relationships in multi-level marketing 
 
 Understand these key concepts:
 
-* **Node**: A position in a tree structure containing an associate, with information about its relationship to other nodes.
+* **Node**: a position in a tree structure containing an associate, with information about its relationship to other nodes.
 
 * **TreeType**: DirectScale supports many tree structures:
 
-  * **Enrollment Tree**: Tracks sponsor relationships.
-  * **Unilevel Tree**: Genealogy where each associate can have unlimited first-level downlines.
-  * **Binary Tree**: Structure with a max of two direct downlines per node.
-  * **Matrix Tree**: Structure with fixed width and unlimited depth. For example, 3×3, 4×7.
+  * **Enrollment Tree**: tracks sponsor relationships.
+  * **Unilevel Tree**: genealogy where each associate can have unlimited first-level downlines.
+  * **Binary Tree**: structure with a max of two direct downlines per node.
+  * **Matrix Tree**: structure with fixed width and unlimited depth. For example, 3×3, 4×7.
 
-* **LegName**: Designates a node's position relative to its upline (important for tree types with named positions like Binary's Left/Right).
+* **LegName**: designates a node's position relative to its upline (important for tree types with named positions like Binary's Left/Right).
 
 ## Initialize dependencies
 
@@ -196,7 +196,7 @@ var binaryPlacement = new Placement
 };
 ```
 
-### Place multiple Associates at once
+### Place multiple associates at once
 
 ```csharp
 var placements = new[] 
@@ -211,7 +211,7 @@ _treeService.Place(placements);
 
 ## Troubleshooting
 
-* **Circular Reference Errors**: ensure you're not creating loops in the tree structure.
-* **Invalid Leg Errors**: verify you're using the correct LegName for the tree type.
-* **Position Already Filled**: check if the target position already contains another associate.
-* **TreeType Mismatch**: confirm the TreeType is consistent between validation and placement.
+* **Circular reference errors**: ensure you're not creating loops in the tree structure.
+* **Invalid leg errors**: verify you're using the correct LegName for the tree type.
+* **Position already filled**: check if the target position already contains another associate.
+* **TreeType mismatch**: confirm the TreeType is consistent between validation and placement.
