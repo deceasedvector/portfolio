@@ -21,7 +21,7 @@ Order Book Replay provides an interactive visualization of historical trading se
 
 ## Key features
 
-### Interactive Timeline Controls
+### Interactive timeline controls
 
 The intuitive player interface gives you complete control over your analysis:
 
@@ -36,19 +36,19 @@ The intuitive player interface gives you complete control over your analysis:
 
 Choose the view that best supports your analysis needs:
 
-#### Depth Discrete View
+#### Depth Discrete view
 
 Displays order book size at individual price points, showing specific market interest levels.
 
 ![Depth Discrete visualization showing size at individual prices](../assets/images/obr-discrete.png)
 
-#### Depth Cumulative View
+#### Depth Cumulative view
 
 Shows aggregated size across price levels, revealing the overall market liquidity structure.
 
 ![Depth Cumulative visualization showing aggregated size](../assets/images/obr-cumulative.png)
 
-#### Depth Data View
+#### Depth Data view
 
 Presents exact numerical values in a table format for precise analysis.
 
@@ -67,11 +67,11 @@ View external market executions alongside internal account activity in a consoli
 
 ![Account activity and execution display](../assets/images/obr-exlusions.png)
 
-- **Expandable Sections**: resize or hide sections as needed
+- **Expandable sections**: resize or hide sections as needed
 
-- **Contextual Labeling**: activities labeled according to your filter selections
+- **Contextual labeling**: activities labeled according to your filter selections
 
-- **Detailed Analysis**: open any activity in Time + Sales Viewer with a single click
+- **Detailed analysis**: open any activity in Time + Sales Viewer with a single click
 
 ## Implementation roadmap
 
@@ -105,7 +105,7 @@ Order Book Replay will roll out in three strategic phases:
 !!! note 
     Level 2 data support requires system compatibility. Contact your Customer Success Manager to verify eligibility or arrange an upgrade.
 
-## Getting Started
+## Getting started
 
 Order Book Replay is disabled by default. To enable this feature:
 
