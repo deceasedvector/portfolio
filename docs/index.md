@@ -39,7 +39,7 @@ title: Resume
 
     Eventus - Ogden, UT `Remote`
     
-    *Financial Market Surveillance Platform* | November 2021 - May 2023
+    *Financial Market Surveillance Platform* | November 2021 - October 2023
 
     - Designed and launched comprehensive Zendesk Help Center, measurably reducing support ticket resolution time
     - Implemented and managed Pendo analytics and in-app guidance to improve user onboarding
