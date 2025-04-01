@@ -17,8 +17,6 @@ What Flat-File gains in simplicity, however, it loses in efficiency and scalabil
 When it comes time to update the data—for example, a customer changes either their name or email on their account—with a flat file, the business would have to locate everywhere in the database where the customer's redundant data is and manually update each entry. 
 Perhaps they don't change every record they should; this can lead to data inconsistency and errors. 
 
-![](../assets/images/mermaid-diagram-2025-04-01-140838.svg)
-
 As the Flat-File database grows, it becomes unwieldy with thousands of records that can bog down the user experience. 
 However, there is a solution. 
 Although it may not be perfect for every use case, it has become relatively standard in many industries, and that's the Relational database. 
@@ -34,8 +32,6 @@ If you've ever used an app or website, the chances are that the underlying datab
 By storing similar data together and assigning each row a unique identifier, you can categorize the data. 
 You can insert new data without affecting the old data. 
 Likewise, you can update the existing data without worrying about data duplication and inconsistency. 
-
-![](../assets/images/mermaid-diagram-2025-04-01-140907.svg)
 
 With Relational databases, there's also an option of collaboration where many users can contribute data without you having to worry about the data drifting out of sync.
 Although Relational databases are the perfect solution for many, it does come with its disadvantages. 
