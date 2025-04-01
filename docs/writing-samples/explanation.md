@@ -33,10 +33,10 @@ erDiagram
 As the Flat-File database grows, it becomes unwieldy with thousands of records that can bog down the user experience. 
 However, there is a solution. 
 Although it may not be perfect for every use case, it has become relatively standard in many industries, and that's the Relational database. 
-The problem with Flat-File databases comes down to the fact that they are not "normalized." 
 
 ## What is Relational?
 
+The problem with Flat-File databases comes down to the fact that they are not "normalized." 
 In 1970, an ingenious fellow named E. F. Codd at IBM determined a mathematical solution for this. 
 His standard proved that breaking up duplicate data into smaller, logical tables/data sets allows for cleaner data inserts, updates, and deletions. 
 These databases are called Relational. 
